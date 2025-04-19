@@ -16,9 +16,6 @@
     <meta property="og:image:height" content="630">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@1.4.0/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
 
@@ -50,7 +47,6 @@
             transform: scale(1.05);
         }
 
-        /* Custom background classes */
         .bg-dark {
             background-color: #1f1f1f;
         }
@@ -65,15 +61,14 @@
 
     <!-- Navbar -->
     <header id="navbar" class="fixed w-full z-50 p-4 flex justify-between items-center">
-        <div class="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">CodeHack</div>
+        <div class="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">CodeHack</div>
         <nav class="hidden md:flex space-x-6">
-            <a href="#home" class="hover:text-yellow-400">Home</a>
-            <a href="#services" class="hover:text-yellow-400">Services</a>
-            <a href="#portfolio" class="hover:text-yellow-400">Portfolio</a>
-            <a href="#testimonials" class="hover:text-yellow-400">Testimonials</a>
-            <a href="#contact" class="hover:text-yellow-400">Contact</a>
+            <a href="#home" class="hover:text-pink-400">Home</a>
+            <a href="#services" class="hover:text-pink-400">Services</a>
+            <a href="#portfolio" class="hover:text-pink-400">Portfolio</a>
+            <a href="#testimonials" class="hover:text-pink-400">Testimonials</a>
+            <a href="#contact" class="hover:text-pink-400">Contact</a>
         </nav>
-        <!-- Mobile Menu -->
         <div class="md:hidden">
             <button id="menu-toggle" class="text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -82,11 +77,11 @@
             </button>
         </div>
         <div id="mobile-menu" class="hidden absolute top-16 right-4 bg-[#1c1e35] rounded-lg shadow-lg py-2">
-            <a href="#home" class="block px-4 py-2 hover:text-yellow-400">Home</a>
-            <a href="#services" class="block px-4 py-2 hover:text-yellow-400">Services</a>
-            <a href="#portfolio" class="block px-4 py-2 hover:text-yellow-400">Portfolio</a>
-            <a href="#testimonials" class="block px-4 py-2 hover:text-yellow-400">Testimonials</a>
-            <a href="#contact" class="block px-4 py-2 hover:text-yellow-400">Contact</a>
+            <a href="#home" class="block px-4 py-2 hover:text-pink-400">Home</a>
+            <a href="#services" class="block px-4 py-2 hover:text-pink-400">Services</a>
+            <a href="#portfolio" class="block px-4 py-2 hover:text-pink-400">Portfolio</a>
+            <a href="#testimonials" class="block px-4 py-2 hover:text-pink-400">Testimonials</a>
+            <a href="#contact" class="block px-4 py-2 hover:text-pink-400">Contact</a>
         </div>
     </header>
 
@@ -94,8 +89,8 @@
     <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20">
         <div>
             <img src="codehack.png" alt="CodeHack Logo" class="mx-auto w-40 mb-4" loading="lazy">
-            <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">TECH SERVICES BY CODEHACK</h1>
-            <p class="mt-4 text-xl text-yellow-300">Empowering Your Digital Presence</p>
+            <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">TECH SERVICES BY CODEHACK</h1>
+            <p class="mt-4 text-xl text-pink-300">Empowering Your Digital Presence</p>
             <p class="mt-2 text-lg text-gray-300">🚀 Get Professional Tech Solutions at Student-Friendly Prices!</p>
             <div class="mt-6"></div>
             <a href="#services" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl shadow-lg hover:scale-105 transition-transform">Explore Services</a>
@@ -105,48 +100,39 @@
     <!-- Services Section -->
     <section id="services" class="py-20 px-6 bg-darker">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">Our Services</h2>
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Our Services</h2>
             <div class="grid gap-8 md:grid-cols-3">
                 <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Website Development</h3>
-                    <p class="text-gray-400">Professional static and dynamic websites tailored to your needs.</p>
+                    <h3 class="text-2xl font-semibold mb-4">Static & Dynamic Website Development</h3>
+                    <p class="text-gray-400">Professional websites tailored to your needs.</p>
                 </div>
                 <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">App Development</h3>
-                    <p class="text-gray-400">Android/iOS apps with clean UI and great performance.</p>
+                    <h3 class="text-2xl font-semibold mb-4">Full Stack Web Apps</h3>
+                    <p class="text-gray-400">Robust and scalable web applications.</p>
                 </div>
                 <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Tech Consulting</h3>
+                    <h3 class="text-2xl font-semibold mb-4">AI-Powered Tools & Bots</h3>
+                    <p class="text-gray-400">Custom AI solutions for automation and innovation.</p>
+                </div>
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Portfolio Sites</h3>
+                    <p class="text-gray-400">Showcase your work with stunning portfolio websites.</p>
+                </div>
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Dashboards & Admin Panels</h3>
+                    <p class="text-gray-400">Interactive dashboards for data visualization and management.</p>
+                </div>
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Hosting & Deployment</h3>
+                    <p class="text-gray-400">Reliable hosting and deployment services.</p>
+                </div>
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Tech Consultation</h3>
                     <p class="text-gray-400">Strategic IT advice to scale your ideas with technology.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 px-6 bg-dark">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">Our Projects</h2>
-            <div class="grid gap-8 md:grid-cols-3">
-                <img src="codehack.png" alt="Project 1" class="rounded-2xl gallery-img shadow-lg" />
-                <img src="codehack.png" alt="Project 2" class="rounded-2xl gallery-img shadow-lg" />
-                <img src="codehack.png" alt="Project 3" class="rounded-2xl gallery-img shadow-lg" />
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 px-6 bg-darker">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">What Clients Say</h2>
-            <div class="grid gap-8 md:grid-cols-2">
-                <div class="bg-dark rounded-2xl p-8 shadow-lg hover-zoom">
-                    <p class="text-gray-400 italic">"CodeHack delivered a fantastic website for our business, on time and budget. Highly recommend!"</p>
-                    <h4 class="mt-4 text-yellow-300 font-semibold">- Rahul Sharma</h4>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 shadow-lg hover-zoom">
-                    <p class="text-gray-400 italic">"Professional and creative team. Our app is exactly how we envisioned it."</p>
-                    <h4 class="mt-4 text-yellow-300 font-semibold">- Priya Deshmukh</h4>
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Final Year Projects</h3>
+                    <p class="text-gray-400">Custom-built and guided projects for IT & CS students.</p>
                 </div>
             </div>
         </div>
@@ -155,13 +141,12 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 bg-darker">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">Get In Touch</h2>
-            <form action="#" class="space-y-6">
-                <input type="text" placeholder="Name" class="w-full p-4 rounded-lg bg-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400" required />
-                <input type="email" placeholder="Email" class="w-full p-4 rounded-lg bg-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400" required />
-                <textarea placeholder="Message" rows="4" class="w-full p-4 rounded-lg bg-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400" required></textarea>
-                <button type="submit" class="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-lg hover:scale-105 transition-transform duration-300">Send Message</button>
-            </form>
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Get In Touch</h2>
+            <p class="text-lg text-gray-300 mb-6">📞 Contact us:</p>
+            <p class="text-gray-400">Karamveer Singh Oberoi: +91 9359791895</p>
+            <p class="text-gray-400">Ayush Chainani: +91 9307528352</p>
+            <p class="text-gray-400 mt-4">🌐 <a href="https://codehack.tech" class="text-blue-400 hover:underline">codehack.tech</a></p>
+            <p class="text-lg text-pink-300 mt-6">Let’s Build Something Awesome!</p>
         </div>
     </section>
 
@@ -171,7 +156,6 @@
     </footer>
 
     <script>
-        // Shrink navbar on scroll
         const navbar = document.getElementById('navbar');
         window.onscroll = () => {
             if (window.scrollY > 10) {
@@ -181,7 +165,6 @@
             }
         };
 
-        // Mobile Menu Toggle
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         menuToggle.addEventListener('click', () => {
