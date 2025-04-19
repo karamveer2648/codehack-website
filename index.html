@@ -298,163 +298,424 @@
         
     </section>
 
-    <!-- Enhanced Services Section -->
+    <!-- Enhanced Services Section with Unique Features -->
     <section id="services" class="py-20 px-6 relative">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-purple-600 rounded-full filter blur-3xl opacity-10 -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-pink-600 rounded-full filter blur-3xl opacity-10 -z-10"></div>
+        
+        <!-- Floating circles -->
+        <div class="absolute left-1/4 top-1/3 w-20 h-20 rounded-full border-2 border-purple-500 opacity-20 animate-pulse"></div>
+        <div class="absolute right-1/4 bottom-1/3 w-12 h-12 rounded-full border-2 border-pink-500 opacity-20 animate-ping"></div>
+        
         <div class="max-w-6xl mx-auto text-center z-10 relative">
-            <h2 class="text-5xl font-bold mb-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Services</h2>
-            
-            <!-- Service Categories Tabs -->
-            <div class="flex flex-wrap justify-center gap-2 mb-12" data-aos="fade-up" data-aos-delay="100">
-                <button class="service-tab-btn active px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white text-sm md:text-base font-medium transition-all" data-tab="web-dev">Web Development</button>
-                <button class="service-tab-btn px-4 py-2 rounded-full bg-opacity-20 bg-white text-white text-sm md:text-base font-medium transition-all hover:bg-opacity-30" data-tab="app-dev">Applications</button>
-                <button class="service-tab-btn px-4 py-2 rounded-full bg-opacity-20 bg-white text-white text-sm md:text-base font-medium transition-all hover:bg-opacity-30" data-tab="ai-tools">AI Solutions</button>
-                <button class="service-tab-btn px-4 py-2 rounded-full bg-opacity-20 bg-white text-white text-sm md:text-base font-medium transition-all hover:bg-opacity-30" data-tab="projects">Student Projects</button>
-                <button class="service-tab-btn px-4 py-2 rounded-full bg-opacity-20 bg-white text-white text-sm md:text-base font-medium transition-all hover:bg-opacity-30" data-tab="tech-services">Tech Services</button>
+            <div class="inline-block relative mb-16">
+                <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gradient mx-auto mb-6">
+                    <div class="w-full h-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-code text-4xl text-white"></i>
+                    </div>
+                </div>
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Services</h2>
+                <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 h-1.5 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"></div>
             </div>
+            
+            <!-- Unique Service Categories Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-16" data-aos="fade-up" data-aos-delay="100">
+                <button class="service-tab-btn active group flex items-center gap-3 px-5 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium transition-all hover:shadow-lg hover:shadow-purple-500/30" data-tab="web-dev">
+                    <span class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-globe text-white"></i>
+                    </span>
+                    <span>Web Development</span>
+                </button>
+                
+                <button class="service-tab-btn group flex items-center gap-3 px-5 py-3 rounded-xl bg-opacity-10 bg-white text-white font-medium transition-all hover:bg-opacity-20 hover:shadow-lg" data-tab="app-dev">
+                    <span class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-white"></i>
+                    </span>
+                    <span>Applications</span>
+                </button>
+                
+                <button class="service-tab-btn group flex items-center gap-3 px-5 py-3 rounded-xl bg-opacity-10 bg-white text-white font-medium transition-all hover:bg-opacity-20 hover:shadow-lg" data-tab="ai-tools">
+                    <span class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-brain text-white"></i>
+                    </span>
+                    <span>AI Solutions</span>
+                </button>
+                
+                <button class="service-tab-btn group flex items-center gap-3 px-5 py-3 rounded-xl bg-opacity-10 bg-white text-white font-medium transition-all hover:bg-opacity-20 hover:shadow-lg" data-tab="projects">
+                    <span class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white"></i>
+                    </span>
+                    <span>Student Projects</span>
+                </button>
+                
+                <button class="service-tab-btn group flex items-center gap-3 px-5 py-3 rounded-xl bg-opacity-10 bg-white text-white font-medium transition-all hover:bg-opacity-20 hover:shadow-lg" data-tab="tech-services">
+                    <span class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                        <i class="fas fa-cogs text-white"></i>
+                    </span>
+                    <span>Tech Services</span>
+                </button>
+            </div>
+
             <!-- Web Development Tab Content -->
             <div id="web-dev" class="service-tab-content active">
-                <div class="grid gap-8 md:grid-cols-3">
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                        <div class="bg-gradient-to-br from-pink-500 to-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-laptop-code text-2xl text-white"></i>
+                <div class="grid gap-10 md:grid-cols-3">
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-purple-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                        <div class="absolute -top-20 -right-20 w-40 h-40 bg-pink-500 rounded-full opacity-10 blur-3xl group-hover:opacity-20 transition-opacity"></div>
+                        
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-pink-500/30 mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center p-4">
+                                <i class="fas fa-laptop-code text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Static Websites</h3>
-                        <p class="text-gray-300">Fast-loading, responsive websites with modern design principles perfect for small businesses.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-pink-300 transition-colors">Static Websites</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Fast-loading, responsive websites with modern design principles perfect for small businesses.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-pink-300">From $499</span>
+                            <a href="#contact" class="text-white hover:text-pink-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                        <div class="bg-gradient-to-br from-purple-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-cogs text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-purple-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                        <div class="absolute -top-20 -right-20 w-40 h-40 bg-purple-500 rounded-full opacity-10 blur-3xl group-hover:opacity-20 transition-opacity"></div>
+                        
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-purple-500/30 mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center p-4">
+                                <i class="fas fa-cogs text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Dynamic Websites</h3>
-                        <p class="text-gray-300">Interactive websites with CMS integration, user authentication, and content management capabilities.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-purple-300 transition-colors">Dynamic Websites</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Interactive websites with CMS integration, user authentication, and content management capabilities.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-purple-300">From $899</span>
+                            <a href="#contact" class="text-white hover:text-purple-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="300">
-                        <div class="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-images text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                        <div class="absolute -top-20 -right-20 w-40 h-40 bg-blue-500 rounded-full opacity-10 blur-3xl group-hover:opacity-20 transition-opacity"></div>
+                        
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-blue-500/30 mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center p-4">
+                                <i class="fas fa-images text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Portfolio Sites</h3>
-                        <p class="text-gray-300">Showcase your work with beautiful, customized portfolio websites designed to highlight your achievements.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-blue-300 transition-colors">Portfolio Sites</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Showcase your work with beautiful, customized portfolio websites designed to highlight your achievements.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-blue-300">From $649</span>
+                            <a href="#contact" class="text-white hover:text-blue-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Applications Tab Content -->
             <div id="app-dev" class="service-tab-content hidden">
-                <div class="grid gap-8 md:grid-cols-3">
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-indigo-500 to-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-server text-2xl text-white"></i>
+                <div class="grid gap-10 md:grid-cols-3">
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-indigo-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                        
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-indigo-500/30 mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center p-4">
+                                <i class="fas fa-server text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Full Stack Web Apps</h3>
-                        <p class="text-gray-300">Robust applications with seamless frontend and backend integration using modern frameworks.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-indigo-300 transition-colors">Full Stack Web Apps</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Robust applications with seamless frontend and backend integration using modern frameworks.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-indigo-300">From $1299</span>
+                            <a href="#contact" class="text-white hover:text-indigo-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-green-500 to-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-chart-line text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-green-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                        
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-green-500/30 mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center p-4">
+                                <i class="fas fa-chart-line text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Dashboards & Admin Panels</h3>
-                        <p class="text-gray-300">Data-driven interfaces with analytics, reporting tools, and comprehensive admin controls.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-green-300 transition-colors">Dashboards & Admin Panels</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Data-driven interfaces with analytics, reporting tools, and comprehensive admin controls.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-green-300">From $1199</span>
+                            <a href="#contact" class="text-white hover:text-green-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-mobile-alt text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                        
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-yellow-500/30 mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center p-4">
+                                <i class="fas fa-mobile-alt text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Progressive Web Apps</h3>
-                        <p class="text-gray-300">App-like experiences that work offline and load instantly, regardless of network state.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-yellow-300 transition-colors">Progressive Web Apps</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">App-like experiences that work offline and load instantly, regardless of network state.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-yellow-300">From $999</span>
+                            <a href="#contact" class="text-white hover:text-yellow-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- AI Solutions Tab Content -->
             <div id="ai-tools" class="service-tab-content hidden">
-                <div class="grid gap-8 md:grid-cols-3">
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-teal-500 to-teal-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-robot text-2xl text-white"></i>
+                <div class="grid gap-10 md:grid-cols-3">
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-teal-500/30 mx-auto mb-6 transform group-hover:scale-110 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center p-4">
+                                <i class="fas fa-robot text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">AI-Powered Chatbots</h3>
-                        <p class="text-gray-300">Intelligent conversational interfaces to enhance customer support and user engagement.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-teal-300 transition-colors">AI-Powered Chatbots</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Intelligent conversational interfaces to enhance customer support and user engagement.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-teal-300">From $899</span>
+                            <a href="#contact" class="text-white hover:text-teal-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-red-500 to-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-brain text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-red-500/30 mx-auto mb-6 transform group-hover:scale-110 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center p-4">
+                                <i class="fas fa-brain text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">ML Integration</h3>
-                        <p class="text-gray-300">Implement machine learning models to automate processes and gain insights from your data.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-red-300 transition-colors">ML Integration</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Implement machine learning models to automate processes and gain insights from your data.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-red-300">From $1499</span>
+                            <a href="#contact" class="text-white hover:text-red-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-orange-500 to-orange-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-cog text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-orange-500/30 mx-auto mb-6 transform group-hover:scale-110 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center p-4">
+                                <i class="fas fa-cog text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Automation Tools</h3>
-                        <p class="text-gray-300">Custom automation solutions to streamline workflows and increase operational efficiency.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-orange-300 transition-colors">Automation Tools</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Custom automation solutions to streamline workflows and increase operational efficiency.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-orange-300">From $999</span>
+                            <a href="#contact" class="text-white hover:text-orange-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Student Projects Tab Content -->
             <div id="projects" class="service-tab-content hidden">
-                <div class="grid gap-8 md:grid-cols-2">
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-pink-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                <div class="grid gap-10 md:grid-cols-2">
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="absolute bottom-0 right-0 w-32 h-32 rounded-full border-4 border-pink-500/10 opacity-30"></div>
+                        
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-pink-500/30 mx-auto mb-6">
+                            <div class="w-full h-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center p-4">
+                                <i class="fas fa-graduation-cap text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Final Year Projects</h3>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Final Year Projects</h3>
                         <p class="text-gray-300">Custom-built projects for IT & CS students with complete documentation and guidance throughout development.</p>
-                        <ul class="mt-4 text-left text-gray-300">
-                            <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i> Web & Mobile Applications</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i> AI & Machine Learning</li>
-                            <li><i class="fas fa-check-circle text-green-400 mr-2"></i> IoT & Embedded Systems</li>
+                        
+                        <ul class="mt-6 text-left text-gray-300 relative">
+                            <li class="mb-3 flex items-center group">
+                                <div class="w-8 h-8 rounded-full border-2 border-green-400 flex items-center justify-center mr-3 group-hover:bg-green-400/20 transition-colors">
+                                    <i class="fas fa-check text-green-400"></i>
+                                </div>
+                                <span class="group-hover:text-white transition-colors">Web & Mobile Applications</span>
+                            </li>
+                            <li class="mb-3 flex items-center group">
+                                <div class="w-8 h-8 rounded-full border-2 border-green-400 flex items-center justify-center mr-3 group-hover:bg-green-400/20 transition-colors">
+                                    <i class="fas fa-check text-green-400"></i>
+                                </div>
+                                <span class="group-hover:text-white transition-colors">AI & Machine Learning</span>
+                            </li>
+                            <li class="flex items-center group">
+                                <div class="w-8 h-8 rounded-full border-2 border-green-400 flex items-center justify-center mr-3 group-hover:bg-green-400/20 transition-colors">
+                                    <i class="fas fa-check text-green-400"></i>
+                                </div>
+                                <span class="group-hover:text-white transition-colors">IoT & Embedded Systems</span>
+                            </li>
                         </ul>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10">
+                            <a href="#contact" class="inline-flex items-center justify-center w-full py-3 bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg text-white font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+                                Get Project Help <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-blue-500 to-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-chalkboard-teacher text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="absolute bottom-0 right-0 w-32 h-32 rounded-full border-4 border-blue-500/10 opacity-30"></div>
+                        
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-blue-500/30 mx-auto mb-6">
+                            <div class="w-full h-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center p-4">
+                                <i class="fas fa-chalkboard-teacher text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Project Mentorship</h3>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Project Mentorship</h3>
                         <p class="text-gray-300">One-on-one guidance for students working on their academic projects with expert feedback and support.</p>
-                        <ul class="mt-4 text-left text-gray-300">
-                            <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i> Technical Guidance</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i> Code Reviews</li>
-                            <li><i class="fas fa-check-circle text-green-400 mr-2"></i> Documentation Support</li>
+                        
+                        <ul class="mt-6 text-left text-gray-300 relative">
+                            <li class="mb-3 flex items-center group">
+                                <div class="w-8 h-8 rounded-full border-2 border-green-400 flex items-center justify-center mr-3 group-hover:bg-green-400/20 transition-colors">
+                                    <i class="fas fa-check text-green-400"></i>
+                                </div>
+                                <span class="group-hover:text-white transition-colors">Technical Guidance</span>
+                            </li>
+                            <li class="mb-3 flex items-center group">
+                                <div class="w-8 h-8 rounded-full border-2 border-green-400 flex items-center justify-center mr-3 group-hover:bg-green-400/20 transition-colors">
+                                    <i class="fas fa-check text-green-400"></i>
+                                </div>
+                                <span class="group-hover:text-white transition-colors">Code Reviews</span>
+                            </li>
+                            <li class="flex items-center group">
+                                <div class="w-8 h-8 rounded-full border-2 border-green-400 flex items-center justify-center mr-3 group-hover:bg-green-400/20 transition-colors">
+                                    <i class="fas fa-check text-green-400"></i>
+                                </div>
+                                <span class="group-hover:text-white transition-colors">Documentation Support</span>
+                            </li>
                         </ul>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10">
+                            <a href="#contact" class="inline-flex items-center justify-center w-full py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg text-white font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all">
+                                Get Mentorship <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Tech Services Tab Content -->
             <div id="tech-services" class="service-tab-content hidden">
-                <div class="grid gap-8 md:grid-cols-3">
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-cyan-500 to-cyan-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-cloud-upload-alt text-2xl text-white"></i>
+                <div class="grid gap-10 md:grid-cols-3">
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-cyan-500/30 mx-auto mb-6 transform group-hover:scale-110 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center p-4">
+                                <i class="fas fa-cloud-upload-alt text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Hosting & Deployment</h3>
-                        <p class="text-gray-300">Secure and reliable hosting solutions with continuous deployment pipelines and maintenance.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-cyan-300 transition-colors">Hosting & Deployment</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Secure and reliable hosting solutions with continuous deployment pipelines and maintenance.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-cyan-300">From $399/year</span>
+                            <a href="#contact" class="text-white hover:text-cyan-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-purple-500 to-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-lightbulb text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-purple-500/30 mx-auto mb-6 transform group-hover:scale-110 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center p-4">
+                                <i class="fas fa-lightbulb text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Tech Consultation</h3>
-                        <p class="text-gray-300">Expert advice on technology stack selection, architecture design, and implementation strategies.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-purple-300 transition-colors">Tech Consultation</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Expert advice on technology stack selection, architecture design, and implementation strategies.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-purple-300">From $99/hour</span>
+                            <a href="#contact" class="text-white hover:text-purple-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-                        <div class="bg-gradient-to-br from-amber-500 to-amber-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-code-branch text-2xl text-white"></i>
+                    <div class="service-card relative overflow-hidden bg-gradient-to-br from-black/50 to-purple-900/10 backdrop-filter backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/5 group">
+                        <div class="w-20 h-20 rounded-full overflow-hidden border-4 border-amber-500/30 mx-auto mb-6 transform group-hover:scale-110 transition-transform">
+                            <div class="w-full h-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center p-4">
+                                <i class="fas fa-code-branch text-3xl text-white"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Version Control</h3>
-                        <p class="text-gray-300">Git repository setup and management with best practices for collaborative development.</p>
+                        
+                        <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-amber-300 transition-colors">Version Control</h3>
+                        <p class="text-gray-300 group-hover:text-white transition-colors">Git repository setup and management with best practices for collaborative development.</p>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="text-xs text-amber-300">From $249</span>
+                            <a href="#contact" class="text-white hover:text-amber-300 transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+            
+            <!-- Featured service banner -->
+            <div class="mt-16 p-8 rounded-2xl bg-gradient-to-r from-purple-900/40 to-pink-900/40 border border-purple-500/20 relative overflow-hidden" data-aos="fade-up">
+                <div class="absolute top-0 left-0 w-full h-full">
+                    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+                    <div class="absolute top-0 left-0 w-32 h-32 rounded-full bg-purple-500 filter blur-3xl opacity-20"></div>
+                    <div class="absolute bottom-0 right-0 w-32 h-32 rounded-full bg-pink-500 filter blur-3xl opacity-20"></div>
+                </div>
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full overflow-hidden border-4 border-purple-500 mr-4">
+                                <div class="w-full h-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center">
+                                    <i class="fas fa-star text-xl text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Need a custom solution?</h3>
+                        </div>
+                        <p class="text-gray-200">Let's discuss your specific requirements and create something unique for your business.</p>
+                    </div>
+                    <a href="#contact" class="px-8 py-4 bg-white text-purple-900 rounded-xl font-bold hover:bg-purple-100 transition-colors hover:shadow-lg hover:shadow-purple-500/20 flex items-center">
+                        <span>Get Custom Quote</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -509,177 +770,454 @@
         });
     </script>
 
-    <!-- Enhanced Portfolio Section with Dynamic Background -->
-    <section id="portfolio" class="py-20 px-6 relative" data-aos="fade-up">
-        <!-- Dynamic background -->
-        <div class="absolute inset-0 z-0 overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-full opacity-20">
-                <!-- Gradient overlays -->
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
-                
-                <!-- Animated shapes -->
-                <div id="portfolio-shapes" class="absolute inset-0"></div>
-            </div>
+    <!-- Innovative Portfolio Showcase with Interactive Elements -->
+    <section id="portfolio" class="py-20 px-6 relative overflow-hidden" data-aos="fade-up">
+        <!-- Dynamic animated background elements -->
+        <div class="absolute inset-0 z-0">
+            <!-- Floating gradient orbs -->
+            <div class="absolute top-0 left-1/4 w-80 h-80 bg-gradient-to-br from-blue-600/5 to-purple-600/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-bl from-pink-600/5 to-indigo-600/10 rounded-full blur-3xl" style="animation: float 15s ease-in-out infinite alternate;"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-tr from-cyan-500/5 to-purple-500/10 rounded-full blur-2xl" style="animation: pulse 10s ease-in-out infinite;"></div>
+            
+            <!-- Subtle grid pattern overlay -->
+            <div class="absolute inset-0 opacity-5" 
+                style="background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), 
+                       linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); 
+                       background-size: 40px 40px;"></div>
         </div>
         
-        <div class="max-w-6xl mx-auto text-center z-10 relative">
-            <h2 class="text-5xl font-bold mb-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Portfolio</h2>
-            
-            <!-- Portfolio Filter Tabs -->
-            <div class="portfolio-filter mb-12 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="100">
-                <button class="filter-btn active px-6 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium transition-all hover:shadow-lg" data-filter="all">All Projects</button>
-                <button class="filter-btn px-6 py-2 rounded-full bg-opacity-20 bg-white text-white font-medium transition-all hover:shadow-lg hover:bg-opacity-30" data-filter="web">Web Design</button>
-                <button class="filter-btn px-6 py-2 rounded-full bg-opacity-20 bg-white text-white font-medium transition-all hover:shadow-lg hover:bg-opacity-30" data-filter="app">Mobile Apps</button>
-                <button class="filter-btn px-6 py-2 rounded-full bg-opacity-20 bg-white text-white font-medium transition-all hover:shadow-lg hover:bg-opacity-30" data-filter="ui">UI/UX Design</button>
+        <div class="max-w-6xl mx-auto z-10 relative">
+            <!-- Section header with decorative elements -->
+            <div class="text-center mb-16 relative" data-aos="fade-up">
+                
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text inline-block">Our Portfolio</h2>
+                
+                <!-- Decorative underline that animates on scroll -->
+                <div class="w-24 h-1.5 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto mt-4 rounded-full" data-aos="zoom-in" data-aos-delay="300"></div>
+                
+                <!-- Decorative elements -->
+                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-40 h-40 bg-purple-500/5 rounded-full blur-xl"></div>
             </div>
             
-            <!-- Portfolio Gallery -->
-            <div class="portfolio-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+            <!-- Portfolio Category Filter with custom styling -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 relative" data-aos="fade-up" data-aos-delay="200">
+                <!-- Connecting line behind filter buttons -->
+                <div class="hidden md:block absolute top-1/2 transform -translate-y-1/2 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-transparent via-purple-500/30 to-transparent"></div>
+                
+                <button class="filter-btn active relative px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium group overflow-hidden" data-filter="all">
+                    <span class="relative z-10">All Projects</span>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-20 bg-white transition-opacity duration-300"></div>
+                </button>
+                
+                <button class="filter-btn relative px-6 py-3 rounded-xl bg-opacity-10 bg-white text-white font-medium group overflow-hidden transition-all" data-filter="web">
+                    <span class="relative z-10 flex items-center gap-2"><i class="fas fa-globe text-pink-400 group-hover:text-white transition-colors"></i>Web Design</span>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-20 bg-gradient-to-r from-pink-500 to-purple-500 transition-opacity duration-300"></div>
+                </button>
+                
+                <button class="filter-btn relative px-6 py-3 rounded-xl bg-opacity-10 bg-white text-white font-medium group overflow-hidden transition-all" data-filter="app">
+                    <span class="relative z-10 flex items-center gap-2"><i class="fas fa-mobile-alt text-blue-400 group-hover:text-white transition-colors"></i>Mobile Apps</span>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-20 bg-gradient-to-r from-blue-500 to-indigo-500 transition-opacity duration-300"></div>
+                </button>
+                
+                <button class="filter-btn relative px-6 py-3 rounded-xl bg-opacity-10 bg-white text-white font-medium group overflow-hidden transition-all" data-filter="ui">
+                    <span class="relative z-10 flex items-center gap-2"><i class="fas fa-paint-brush text-purple-400 group-hover:text-white transition-colors"></i>UI/UX Design</span>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-20 bg-gradient-to-r from-purple-500 to-indigo-500 transition-opacity duration-300"></div>
+                </button>
+            </div>
+            
+            <!-- Portfolio Gallery with enhanced interactive cards -->
+            <div class="portfolio-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="300">
                 <!-- Portfolio Item 1 -->
-                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-web">
-                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
-                        <img src="portfolio1.jpg" alt="E-commerce Website" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
-                            <p class="text-gray-300 mb-4">A full-featured online store with product management and payment gateway integration.</p>
-                            <div class="flex justify-between">
-                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>Visit Site
-                                </a>
-                                <span class="text-blue-400">
-                                    <i class="fas fa-code mr-1"></i>Web Design
-                                </span>
+                <div class="portfolio-item visible transition-all duration-500 filter-all filter-web">
+                    <div class="relative overflow-hidden rounded-2xl group bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-0.5">
+                        <!-- Gradient border that animates on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-500/30 via-purple-500/20 to-blue-500/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="relative overflow-hidden rounded-2xl">
+                            <!-- Project image with hover effect -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="portfolio1.jpg" alt="E-commerce Website" 
+                                     class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                                     
+                                <!-- Corner accents that appear on hover -->
+                                <div class="absolute top-4 left-4 w-10 h-10 border-t-2 border-l-2 border-pink-500 rounded-tl-lg opacity-0 group-hover:opacity-100 transform -translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                <div class="absolute bottom-4 right-4 w-10 h-10 border-b-2 border-r-2 border-blue-500 rounded-br-lg opacity-0 group-hover:opacity-100 transform translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                
+                                <!-- Project category badge -->
+                                <span class="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full text-xs font-medium text-white shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Web Design</span>
+                            </div>
+                            
+                            <!-- Project details with reveal animation -->
+                            <div class="p-6 bg-gradient-to-b from-gray-900/90 to-black/90 relative">
+                                <h3 class="text-xl font-bold text-white mb-2 relative inline-block">
+                                    E-commerce Platform
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-blue-500 group-hover:w-full transition-all duration-500"></span>
+                                </h3>
+                                
+                                <p class="text-gray-300 mb-4">A full-featured online store with product management and payment gateway integration.</p>
+                                
+                                <!-- Tech stack tags -->
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-purple-500/10 rounded-full text-xs text-purple-300 border border-purple-500/20">React</span>
+                                    <span class="px-3 py-1 bg-blue-500/10 rounded-full text-xs text-blue-300 border border-blue-500/20">Node.js</span>
+                                    <span class="px-3 py-1 bg-green-500/10 rounded-full text-xs text-green-300 border border-green-500/20">MongoDB</span>
+                                </div>
+                                
+                                <!-- Action buttons with hover effects -->
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="text-pink-400 hover:text-pink-300 flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/80 text-gray-400 hover:bg-pink-500 hover:text-white transform hover:-translate-y-1 transition-all">
+                                        <i class="fas fa-external-link-alt text-sm"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Portfolio Item 2 -->
-                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-app">
-                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
-                        <img src="portfolio2.jpg" alt="Fitness App" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Fitness Tracker App</h3>
-                            <p class="text-gray-300 mb-4">Mobile application for tracking workouts, nutrition, and health metrics.</p>
-                            <div class="flex justify-between">
-                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>View Details
-                                </a>
-                                <span class="text-green-400">
-                                    <i class="fas fa-mobile-alt mr-1"></i>Mobile App
-                                </span>
+                <div class="portfolio-item visible transition-all duration-500 filter-all filter-app">
+                    <div class="relative overflow-hidden rounded-2xl group bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-0.5">
+                        <!-- Gradient border that animates on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/30 via-purple-500/20 to-cyan-500/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="relative overflow-hidden rounded-2xl">
+                            <!-- Project image with hover effect -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="portfolio2.jpg" alt="Fitness App" 
+                                     class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                                     
+                                <!-- Corner accents that appear on hover -->
+                                <div class="absolute top-4 left-4 w-10 h-10 border-t-2 border-l-2 border-cyan-500 rounded-tl-lg opacity-0 group-hover:opacity-100 transform -translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                <div class="absolute bottom-4 right-4 w-10 h-10 border-b-2 border-r-2 border-blue-500 rounded-br-lg opacity-0 group-hover:opacity-100 transform translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                
+                                <!-- Project category badge -->
+                                <span class="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full text-xs font-medium text-white shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Mobile App</span>
+                            </div>
+                            
+                            <!-- Project details with reveal animation -->
+                            <div class="p-6 bg-gradient-to-b from-gray-900/90 to-black/90 relative">
+                                <h3 class="text-xl font-bold text-white mb-2 relative inline-block">
+                                    Fitness Tracker App
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 group-hover:w-full transition-all duration-500"></span>
+                                </h3>
+                                
+                                <p class="text-gray-300 mb-4">Mobile application for tracking workouts, nutrition, and health metrics with real-time data visualization.</p>
+                                
+                                <!-- Tech stack tags -->
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-500/10 rounded-full text-xs text-blue-300 border border-blue-500/20">React Native</span>
+                                    <span class="px-3 py-1 bg-cyan-500/10 rounded-full text-xs text-cyan-300 border border-cyan-500/20">Firebase</span>
+                                    <span class="px-3 py-1 bg-green-500/10 rounded-full text-xs text-green-300 border border-green-500/20">HealthKit</span>
+                                </div>
+                                
+                                <!-- Action buttons with hover effects -->
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/80 text-gray-400 hover:bg-blue-500 hover:text-white transform hover:-translate-y-1 transition-all">
+                                        <i class="fas fa-external-link-alt text-sm"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Portfolio Item 3 -->
-                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-ui">
-                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
-                        <img src="portfolio3.jpg" alt="Dashboard UI" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Analytics Dashboard</h3>
-                            <p class="text-gray-300 mb-4">Modern UI design for a data analytics platform with intuitive visualizations.</p>
-                            <div class="flex justify-between">
-                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>View Project
-                                </a>
-                                <span class="text-purple-400">
-                                    <i class="fas fa-paint-brush mr-1"></i>UI/UX Design
-                                </span>
+                <div class="portfolio-item visible transition-all duration-500 filter-all filter-ui">
+                    <div class="relative overflow-hidden rounded-2xl group bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-0.5">
+                        <!-- Gradient border that animates on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-indigo-500/20 to-violet-500/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="relative overflow-hidden rounded-2xl">
+                            <!-- Project image with hover effect -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="portfolio3.jpg" alt="Dashboard UI" 
+                                     class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                                     
+                                <!-- Corner accents that appear on hover -->
+                                <div class="absolute top-4 left-4 w-10 h-10 border-t-2 border-l-2 border-indigo-500 rounded-tl-lg opacity-0 group-hover:opacity-100 transform -translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                <div class="absolute bottom-4 right-4 w-10 h-10 border-b-2 border-r-2 border-violet-500 rounded-br-lg opacity-0 group-hover:opacity-100 transform translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                
+                                <!-- Project category badge -->
+                                <span class="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full text-xs font-medium text-white shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">UI/UX Design</span>
+                            </div>
+                            
+                            <!-- Project details with reveal animation -->
+                            <div class="p-6 bg-gradient-to-b from-gray-900/90 to-black/90 relative">
+                                <h3 class="text-xl font-bold text-white mb-2 relative inline-block">
+                                    Analytics Dashboard
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 group-hover:w-full transition-all duration-500"></span>
+                                </h3>
+                                
+                                <p class="text-gray-300 mb-4">Modern UI design for a data analytics platform with intuitive visualizations and real-time data processing.</p>
+                                
+                                <!-- Tech stack tags -->
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-purple-500/10 rounded-full text-xs text-purple-300 border border-purple-500/20">Figma</span>
+                                    <span class="px-3 py-1 bg-indigo-500/10 rounded-full text-xs text-indigo-300 border border-indigo-500/20">D3.js</span>
+                                    <span class="px-3 py-1 bg-pink-500/10 rounded-full text-xs text-pink-300 border border-pink-500/20">Tailwind</span>
+                                </div>
+                                
+                                <!-- Action buttons with hover effects -->
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/80 text-gray-400 hover:bg-purple-500 hover:text-white transform hover:-translate-y-1 transition-all">
+                                        <i class="fas fa-external-link-alt text-sm"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Portfolio Item 4 -->
-                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-web">
-                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
-                        <img src="portfolio4.jpg" alt="Real Estate Website" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Real Estate Platform</h3>
-                            <p class="text-gray-300 mb-4">Property listing website with advanced search and virtual tour features.</p>
-                            <div class="flex justify-between">
-                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>Visit Site
-                                </a>
-                                <span class="text-blue-400">
-                                    <i class="fas fa-code mr-1"></i>Web Design
-                                </span>
+                <div class="portfolio-item visible transition-all duration-500 filter-all filter-web">
+                    <div class="relative overflow-hidden rounded-2xl group bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-0.5">
+                        <!-- Gradient border that animates on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/30 via-pink-500/20 to-red-500/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="relative overflow-hidden rounded-2xl">
+                            <!-- Project image with hover effect -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="portfolio4.jpg" alt="Real Estate Website" 
+                                     class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                                     
+                                <!-- Corner accents that appear on hover -->
+                                <div class="absolute top-4 left-4 w-10 h-10 border-t-2 border-l-2 border-orange-500 rounded-tl-lg opacity-0 group-hover:opacity-100 transform -translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                <div class="absolute bottom-4 right-4 w-10 h-10 border-b-2 border-r-2 border-red-500 rounded-br-lg opacity-0 group-hover:opacity-100 transform translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                
+                                <!-- Project category badge -->
+                                <span class="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-red-500 to-pink-600 rounded-full text-xs font-medium text-white shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Web Design</span>
+                            </div>
+                            
+                            <!-- Project details with reveal animation -->
+                            <div class="p-6 bg-gradient-to-b from-gray-900/90 to-black/90 relative">
+                                <h3 class="text-xl font-bold text-white mb-2 relative inline-block">
+                                    Real Estate Platform
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 group-hover:w-full transition-all duration-500"></span>
+                                </h3>
+                                
+                                <p class="text-gray-300 mb-4">Property listing website with advanced search filtering, virtual tours and interactive maps.</p>
+                                
+                                <!-- Tech stack tags -->
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-orange-500/10 rounded-full text-xs text-orange-300 border border-orange-500/20">Vue.js</span>
+                                    <span class="px-3 py-1 bg-yellow-500/10 rounded-full text-xs text-yellow-300 border border-yellow-500/20">Django</span>
+                                    <span class="px-3 py-1 bg-red-500/10 rounded-full text-xs text-red-300 border border-red-500/20">PostgreSQL</span>
+                                </div>
+                                
+                                <!-- Action buttons with hover effects -->
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="text-orange-400 hover:text-orange-300 flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/80 text-gray-400 hover:bg-orange-500 hover:text-white transform hover:-translate-y-1 transition-all">
+                                        <i class="fas fa-external-link-alt text-sm"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Portfolio Item 5 -->
-                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-app">
-                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
-                        <img src="portfolio5.jpg" alt="Delivery App" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Food Delivery App</h3>
-                            <p class="text-gray-300 mb-4">Mobile application for ordering food with real-time delivery tracking.</p>
-                            <div class="flex justify-between">
-                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>View Details
-                                </a>
-                                <span class="text-green-400">
-                                    <i class="fas fa-mobile-alt mr-1"></i>Mobile App
-                                </span>
+                <div class="portfolio-item visible transition-all duration-500 filter-all filter-app">
+                    <div class="relative overflow-hidden rounded-2xl group bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-0.5">
+                        <!-- Gradient border that animates on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/30 via-green-500/20 to-teal-500/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="relative overflow-hidden rounded-2xl">
+                            <!-- Project image with hover effect -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="portfolio5.jpg" alt="Delivery App" 
+                                     class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                                     
+                                <!-- Corner accents that appear on hover -->
+                                <div class="absolute top-4 left-4 w-10 h-10 border-t-2 border-l-2 border-emerald-500 rounded-tl-lg opacity-0 group-hover:opacity-100 transform -translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                <div class="absolute bottom-4 right-4 w-10 h-10 border-b-2 border-r-2 border-green-500 rounded-br-lg opacity-0 group-hover:opacity-100 transform translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                
+                                <!-- Project category badge -->
+                                <span class="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-teal-500 to-green-600 rounded-full text-xs font-medium text-white shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">Mobile App</span>
+                            </div>
+                            
+                            <!-- Project details with reveal animation -->
+                            <div class="p-6 bg-gradient-to-b from-gray-900/90 to-black/90 relative">
+                                <h3 class="text-xl font-bold text-white mb-2 relative inline-block">
+                                    Food Delivery App
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-teal-500 to-emerald-500 group-hover:w-full transition-all duration-500"></span>
+                                </h3>
+                                
+                                <p class="text-gray-300 mb-4">Mobile application for ordering food with real-time tracking, payment processing and restaurant discovery.</p>
+                                
+                                <!-- Tech stack tags -->
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-emerald-500/10 rounded-full text-xs text-emerald-300 border border-emerald-500/20">Flutter</span>
+                                    <span class="px-3 py-1 bg-teal-500/10 rounded-full text-xs text-teal-300 border border-teal-500/20">Node.js</span>
+                                    <span class="px-3 py-1 bg-green-500/10 rounded-full text-xs text-green-300 border border-green-500/20">MongoDB</span>
+                                </div>
+                                
+                                <!-- Action buttons with hover effects -->
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="text-teal-400 hover:text-teal-300 flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/80 text-gray-400 hover:bg-emerald-500 hover:text-white transform hover:-translate-y-1 transition-all">
+                                        <i class="fas fa-external-link-alt text-sm"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Portfolio Item 6 -->
-                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-ui">
-                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
-                        <img src="portfolio6.jpg" alt="Banking App UI" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Banking Application UI</h3>
-                            <p class="text-gray-300 mb-4">Secure and intuitive interface design for a mobile banking application.</p>
-                            <div class="flex justify-between">
-                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>View Project
-                                </a>
-                                <span class="text-purple-400">
-                                    <i class="fas fa-paint-brush mr-1"></i>UI/UX Design
-                                </span>
+                <div class="portfolio-item visible transition-all duration-500 filter-all filter-ui">
+                    <div class="relative overflow-hidden rounded-2xl group bg-gradient-to-br from-gray-900/80 to-gray-800/80 p-0.5">
+                        <!-- Gradient border that animates on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/30 via-yellow-500/20 to-orange-500/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="relative overflow-hidden rounded-2xl">
+                            <!-- Project image with hover effect -->
+                            <div class="relative overflow-hidden aspect-video">
+                                <img src="portfolio6.jpg" alt="Banking App UI" 
+                                     class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+                                     
+                                <!-- Corner accents that appear on hover -->
+                                <div class="absolute top-4 left-4 w-10 h-10 border-t-2 border-l-2 border-amber-500 rounded-tl-lg opacity-0 group-hover:opacity-100 transform -translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                <div class="absolute bottom-4 right-4 w-10 h-10 border-b-2 border-r-2 border-yellow-500 rounded-br-lg opacity-0 group-hover:opacity-100 transform translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500"></div>
+                                
+                                <!-- Project category badge -->
+                                <span class="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-full text-xs font-medium text-white shadow-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">UI/UX Design</span>
+                            </div>
+                            
+                            <!-- Project details with reveal animation -->
+                            <div class="p-6 bg-gradient-to-b from-gray-900/90 to-black/90 relative">
+                                <h3 class="text-xl font-bold text-white mb-2 relative inline-block">
+                                    Banking Application UI
+                                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-amber-500 to-yellow-500 group-hover:w-full transition-all duration-500"></span>
+                                </h3>
+                                
+                                <p class="text-gray-300 mb-4">Secure and intuitive interface design for a mobile banking application with biometric authentication.</p>
+                                
+                                <!-- Tech stack tags -->
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-amber-500/10 rounded-full text-xs text-amber-300 border border-amber-500/20">Adobe XD</span>
+                                    <span class="px-3 py-1 bg-yellow-500/10 rounded-full text-xs text-yellow-300 border border-yellow-500/20">Sketch</span>
+                                    <span class="px-3 py-1 bg-orange-500/10 rounded-full text-xs text-orange-300 border border-orange-500/20">Swift UI</span>
+                                </div>
+                                
+                                <!-- Action buttons with hover effects -->
+                                <div class="flex justify-between items-center">
+                                    <a href="#" class="text-amber-400 hover:text-amber-300 flex items-center gap-2 transform group-hover:translate-x-2 transition-all duration-300">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/80 text-gray-400 hover:bg-amber-500 hover:text-white transform hover:-translate-y-1 transition-all">
+                                        <i class="fas fa-external-link-alt text-sm"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- "View All Projects" button with interactive effects -->
+            <div class="mt-12 text-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#" class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-size-200 bg-pos-0 hover:bg-pos-100 text-white font-medium rounded-xl shadow-lg hover:shadow-purple-500/30 transition-all duration-500 relative overflow-hidden group">
+                    <span class="relative z-10">View All Projects</span>
+                    <i class="fas fa-arrow-right relative z-10 transform group-hover:translate-x-1 transition-transform"></i>
+                    
+                    <!-- Button sparkle effect -->
+                    <span class="absolute inset-0 h-full w-full bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:rotate-180 transition-all duration-1000"></span>
+                </a>
+            </div>
         </div>
     </section>
 
+    <!-- Animation styles for floating elements -->
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.2; }
+            50% { opacity: 0.4; }
+            100% { opacity: 0.2; }
+        }
+        
+        .bg-size-200 {
+            background-size: 200% 100%;
+        }
+        
+        .bg-pos-0 {
+            background-position: 0% 0%;
+        }
+        
+        .bg-pos-100 {
+            background-position: 100% 0%;
+        }
+    </style>
+
     <script>
-        // Initialize portfolio section when the page loads
         document.addEventListener('DOMContentLoaded', function() {
-            // Portfolio filter functionality
+            // Portfolio filter functionality with enhanced animations
             const filterButtons = document.querySelectorAll('.filter-btn');
             const portfolioItems = document.querySelectorAll('.portfolio-item');
             
             filterButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    // Update active button
-                    filterButtons.forEach(btn => btn.classList.remove('active', 'bg-gradient-to-r', 'from-pink-500', 'to-purple-600'));
-                    filterButtons.forEach(btn => btn.classList.add('bg-opacity-20', 'bg-white'));
-                    button.classList.remove('bg-opacity-20', 'bg-white');
+                    // Update active button styles with smoother transitions
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-gradient-to-r', 'from-pink-500', 'to-purple-600');
+                        btn.classList.add('bg-opacity-10', 'bg-white');
+                    });
+                    
+                    button.classList.remove('bg-opacity-10', 'bg-white');
                     button.classList.add('active', 'bg-gradient-to-r', 'from-pink-500', 'to-purple-600');
                     
                     const filterValue = button.getAttribute('data-filter');
                     
-                    // Filter items with smooth animation
+                    // Enhanced filtering with staggered animations
+                    let delay = 0;
+                    
                     portfolioItems.forEach(item => {
                         if (filterValue === 'all' || item.classList.contains(`filter-${filterValue}`)) {
-                            item.style.display = 'block';
+                            // Show items that match the filter
                             setTimeout(() => {
                                 item.classList.add('visible');
-                                item.classList.remove('opacity-0', 'scale-95');
-                            }, 50);
+                                item.classList.remove('opacity-0', 'scale-95', 'translate-y-4');
+                                
+                                // First make it visible, then animate it in
+                                item.style.display = 'block';
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'scale(1) translateY(0)';
+                                }, 50);
+                            }, delay);
+                            
+                            delay += 100; // Stagger the animations
                         } else {
+                            // Hide items that don't match
                             item.classList.remove('visible');
-                            item.classList.add('opacity-0', 'scale-95');
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.95) translateY(10px)';
+                            
                             setTimeout(() => {
                                 item.style.display = 'none';
                             }, 500);
@@ -688,131 +1226,363 @@
                 });
             });
             
-            // Create dynamic background for portfolio section
-            createPortfolioBackground();
+            // Initialize portfolio items with correct opacity/transform for animations
+            portfolioItems.forEach(item => {
+                item.style.opacity = '1';
+                item.style.transform = 'scale(1) translateY(0)';
+            });
+            
+            // Parallax effect for background elements
+            const portfolioSection = document.getElementById('portfolio');
+            const bgElements = document.querySelectorAll('#portfolio > .absolute > div');
+            
+            window.addEventListener('scroll', function() {
+                const rect = portfolioSection.getBoundingClientRect();
+                
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+                    
+                    bgElements.forEach((el, index) => {
+                        const moveY = (scrollProgress - 0.5) * (20 + index * 10);
+                        el.style.transform = `translateY(${moveY}px)`;
+                    });
+                }
+            });
         });
-        
-        // Generate floating shapes for the portfolio background
-        function createPortfolioBackground() {
-            const container = document.getElementById('portfolio-shapes');
-            const colors = ['rgba(219, 39, 119, 0.1)', 'rgba(124, 58, 237, 0.1)', 'rgba(59, 130, 246, 0.1)'];
-            
-            for (let i = 0; i < 15; i++) {
-                const shape = document.createElement('div');
-                const size = Math.random() * 100 + 50;
-                
-                shape.style.position = 'absolute';
-                shape.style.width = `${size}px`;
-                shape.style.height = `${size}px`;
-                shape.style.borderRadius = Math.random() > 0.5 ? '50%' : `${Math.random() * 30}%`;
-                shape.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                shape.style.left = `${Math.random() * 100}%`;
-                shape.style.top = `${Math.random() * 100}%`;
-                shape.style.opacity = Math.random() * 0.6 + 0.2;
-                shape.style.filter = `blur(${Math.random() * 40 + 10}px)`;
-                shape.style.transform = `rotate(${Math.random() * 360}deg)`;
-                shape.style.transition = 'all 20s linear';
-                
-                // Set animation
-                shape.animate([
-                    { transform: `translate(0, 0) rotate(0deg)` },
-                    { transform: `translate(${(Math.random() - 0.5) * 40}px, ${(Math.random() - 0.5) * 40}px) rotate(${Math.random() * 360}deg)` }
-                ], {
-                    duration: Math.random() * 20000 + 10000,
-                    iterations: Infinity,
-                    direction: 'alternate',
-                    easing: 'ease-in-out'
-                });
-                
-                container.appendChild(shape);
-            }
-        }
     </script>
-    <!-- Enhanced Testimonials Section -->
+    <!-- Enhanced Interactive Testimonials Section with Dynamic Background -->
     <section id="testimonials" class="py-20 px-6 relative overflow-hidden">
-        <div class="max-w-6xl mx-auto text-center z-10 relative">
-            <h2 class="text-5xl font-bold mb-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">What Our Clients Say</h2>
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 overflow-hidden z-0">
+            <div class="absolute top-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-20 left-10 w-80 h-80 bg-gradient-to-l from-pink-500/10 to-transparent rounded-full blur-3xl" style="animation: float 15s ease-in-out infinite alternate"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-500/5 rounded-full blur-xl opacity-70" style="animation: pulse 10s ease-in-out infinite"></div>
             
-            <div class="testimonial-slider relative max-w-3xl mx-auto overflow-hidden" data-aos="fade-up">
-                <div class="swiper-container">
+            <!-- Subtle grid pattern overlay -->
+            <div class="absolute inset-0 opacity-5" 
+                style="background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+                       background-size: 30px 30px;"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto z-10 relative">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <!-- Section label -->
+                <span class="inline-block px-4 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-pink-300 text-sm font-medium mb-3">CLIENT EXPERIENCES</span>
+                <h2 class="text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">What Our Clients Say</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto mt-4 rounded-full"></div>
+                
+                <!-- Section description -->
+                <p class="text-gray-300 mt-6 max-w-2xl mx-auto">Real experiences from our clients showcase our commitment to excellence and customer satisfaction.</p>
+            </div>
+            
+            <!-- Testimonial carousel with enhanced visual effects -->
+            <div class="testimonial-slider relative max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <!-- Decorative elements -->
+                <div class="absolute -z-10 top-1/3 left-0 w-20 h-20 border-2 border-purple-500/20 rounded-full"></div>
+                <div class="absolute -z-10 top-1/2 right-0 w-32 h-32 border-2 border-pink-500/20 rounded-full"></div>
+                
+                <!-- Quote icon for decoration -->
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl text-purple-500/20 rotate-180 z-0">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                
+                <div class="swiper-container overflow-visible">
                     <div class="swiper-wrapper">
                         <!-- Testimonial 1 -->
-                        <div class="swiper-slide">
-                            <div class="glass-card rounded-2xl p-8 shadow-lg">
-                                <div class="flex items-center justify-center mb-6">
-                                    <div class="w-20 h-20 rounded-full border-4 border-pink-500 overflow-hidden">
-                                        <img src="client1.jpg" alt="Client 1" class="w-full h-full object-cover">
+                        <div class="swiper-slide p-4">
+                            <div class="glass-card rounded-2xl p-0 overflow-hidden group shadow-xl transition-all duration-500 hover:shadow-purple-500/20">
+                                <!-- Top decorative bar that animates on hover -->
+                                <div class="h-1.5 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                
+                                <div class="relative bg-gradient-to-br from-purple-900/30 to-gray-900/30 p-8">
+                                    <!-- Decorative elements -->
+                                    <div class="absolute top-0 right-0 w-40 h-40 bg-purple-500/5 rounded-full blur-xl"></div>
+                                    <div class="absolute bottom-10 left-10 w-20 h-20 bg-pink-500/5 rounded-full blur-lg"></div>
+                                    
+                                    <!-- Rating stars at the top -->
+                                    <div class="flex justify-center mb-6">
+                                        <div class="flex space-x-1 text-yellow-400">
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-0"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-75"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-100"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-150"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-200"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Testimonial content -->
+                                    <div class="relative">
+                                        <p class="text-gray-100 italic text-lg mb-8 relative">
+                                            "CodeHack transformed our vision into reality. Their professionalism and creativity exceeded all our expectations. The team was responsive, insightful, and delivered exactly what we needed!"
+                                            
+                                            <!-- Corner quote marks -->
+                                            <span class="absolute -top-4 -left-2 text-purple-500/20 text-4xl">"</span>
+                                            <span class="absolute -bottom-4 -right-2 text-purple-500/20 text-4xl">"</span>
+                                        </p>
+                                        
+                                        <!-- Client information with image -->
+                                        <div class="flex items-center gap-4">
+                                            <div class="relative">
+                                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-pink-500/50 group-hover:border-purple-500/70 transition-all duration-300">
+                                                    <img src="client1.jpg" alt="John Doe" class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700">
+                                                </div>
+                                                <!-- Animated corner accent -->
+                                                <div class="absolute -bottom-1 -right-1 w-3 h-3 border-r-2 border-b-2 border-pink-500 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                                            </div>
+                                            <div class="text-left">
+                                                <h3 class="text-xl font-semibold text-white group-hover:text-pink-400 transition-colors relative inline-block">
+                                                    John Doe
+                                                    <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-500 transition-all duration-500"></span>
+                                                </h3>
+                                                <p class="text-gray-400">CEO, TechCorp</p>
+                                                
+                                                <!-- Client company badge -->
+                                                <span class="inline-block mt-1 px-2 py-0.5 bg-purple-500/10 rounded-full text-xs text-purple-300 border border-purple-500/20">
+                                                    <i class="fas fa-building mr-1"></i>Tech Industry
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <p class="text-gray-100 italic text-lg">"CodeHack transformed our vision into reality. Their professionalism and creativity are unmatched!"</p>
-                                <div class="mt-6 flex justify-center">
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <h3 class="mt-4 text-xl font-semibold text-pink-400">- John Doe, CEO of TechCorp</h3>
                             </div>
                         </div>
                         
                         <!-- Testimonial 2 -->
-                        <div class="swiper-slide">
-                            <div class="glass-card rounded-2xl p-8 shadow-lg">
-                                <div class="flex items-center justify-center mb-6">
-                                    <div class="w-20 h-20 rounded-full border-4 border-blue-500 overflow-hidden">
-                                        <img src="client2.jpg" alt="Client 2" class="w-full h-full object-cover">
+                        <div class="swiper-slide p-4">
+                            <div class="glass-card rounded-2xl p-0 overflow-hidden group shadow-xl transition-all duration-500 hover:shadow-blue-500/20">
+                                <!-- Top decorative bar that animates on hover -->
+                                <div class="h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                
+                                <div class="relative bg-gradient-to-br from-blue-900/30 to-gray-900/30 p-8">
+                                    <!-- Decorative elements -->
+                                    <div class="absolute top-0 left-0 w-40 h-40 bg-blue-500/5 rounded-full blur-xl"></div>
+                                    <div class="absolute bottom-10 right-10 w-20 h-20 bg-indigo-500/5 rounded-full blur-lg"></div>
+                                    
+                                    <!-- Rating stars at the top -->
+                                    <div class="flex justify-center mb-6">
+                                        <div class="flex space-x-1 text-yellow-400">
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-0"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-75"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-100"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-150"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-200"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Testimonial content -->
+                                    <div class="relative">
+                                        <p class="text-gray-100 italic text-lg mb-8 relative">
+                                            "Working with CodeHack was a game-changer for our business. Their attention to detail and technical expertise helped us launch our platform ahead of schedule with exceptional quality and performance!"
+                                            
+                                            <!-- Corner quote marks -->
+                                            <span class="absolute -top-4 -left-2 text-blue-500/20 text-4xl">"</span>
+                                            <span class="absolute -bottom-4 -right-2 text-blue-500/20 text-4xl">"</span>
+                                        </p>
+                                        
+                                        <!-- Client information with image -->
+                                        <div class="flex items-center gap-4">
+                                            <div class="relative">
+                                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-blue-500/50 group-hover:border-indigo-500/70 transition-all duration-300">
+                                                    <img src="client2.jpg" alt="Jane Smith" class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700">
+                                                </div>
+                                                <!-- Animated corner accent -->
+                                                <div class="absolute -bottom-1 -right-1 w-3 h-3 border-r-2 border-b-2 border-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                                            </div>
+                                            <div class="text-left">
+                                                <h3 class="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors relative inline-block">
+                                                    Jane Smith
+                                                    <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-blue-500 transition-all duration-500"></span>
+                                                </h3>
+                                                <p class="text-gray-400">Marketing Director, BrandSync</p>
+                                                
+                                                <!-- Client company badge -->
+                                                <span class="inline-block mt-1 px-2 py-0.5 bg-blue-500/10 rounded-full text-xs text-blue-300 border border-blue-500/20">
+                                                    <i class="fas fa-bullhorn mr-1"></i>Marketing
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <p class="text-gray-100 italic text-lg">"Working with CodeHack was a game-changer for our business. Their attention to detail is exceptional!"</p>
-                                <div class="mt-6 flex justify-center">
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <h3 class="mt-4 text-xl font-semibold text-blue-400">- Jane Smith, Marketing Director</h3>
                             </div>
                         </div>
                         
                         <!-- Testimonial 3 -->
-                        <div class="swiper-slide">
-                            <div class="glass-card rounded-2xl p-8 shadow-lg">
-                                <div class="flex items-center justify-center mb-6">
-                                    <div class="w-20 h-20 rounded-full border-4 border-purple-500 overflow-hidden">
-                                        <img src="client3.jpg" alt="Client 3" class="w-full h-full object-cover">
+                        <div class="swiper-slide p-4">
+                            <div class="glass-card rounded-2xl p-0 overflow-hidden group shadow-xl transition-all duration-500 hover:shadow-indigo-500/20">
+                                <!-- Top decorative bar that animates on hover -->
+                                <div class="h-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                
+                                <div class="relative bg-gradient-to-br from-indigo-900/30 to-gray-900/30 p-8">
+                                    <!-- Decorative elements -->
+                                    <div class="absolute top-0 right-0 w-40 h-40 bg-indigo-500/5 rounded-full blur-xl"></div>
+                                    <div class="absolute bottom-10 left-10 w-20 h-20 bg-violet-500/5 rounded-full blur-lg"></div>
+                                    
+                                    <!-- Rating stars at the top -->
+                                    <div class="flex justify-center mb-6">
+                                        <div class="flex space-x-1 text-yellow-400">
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-0"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-75"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-100"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-150"></i>
+                                            <i class="fas fa-star transform group-hover:scale-110 transition-transform duration-300 delay-200"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Testimonial content -->
+                                    <div class="relative">
+                                        <p class="text-gray-100 italic text-lg mb-8 relative">
+                                            "The team at CodeHack delivered our project ahead of schedule with outstanding quality. Their technical knowledge and creative problem-solving approach made the entire development process smooth and stress-free!"
+                                            
+                                            <!-- Corner quote marks -->
+                                            <span class="absolute -top-4 -left-2 text-indigo-500/20 text-4xl">"</span>
+                                            <span class="absolute -bottom-4 -right-2 text-indigo-500/20 text-4xl">"</span>
+                                        </p>
+                                        
+                                        <!-- Client information with image -->
+                                        <div class="flex items-center gap-4">
+                                            <div class="relative">
+                                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-indigo-500/50 group-hover:border-violet-500/70 transition-all duration-300">
+                                                    <img src="client3.jpg" alt="Alex Johnson" class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700">
+                                                </div>
+                                                <!-- Animated corner accent -->
+                                                <div class="absolute -bottom-1 -right-1 w-3 h-3 border-r-2 border-b-2 border-indigo-500 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                                            </div>
+                                            <div class="text-left">
+                                                <h3 class="text-xl font-semibold text-white group-hover:text-indigo-400 transition-colors relative inline-block">
+                                                    Alex Johnson
+                                                    <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-indigo-500 transition-all duration-500"></span>
+                                                </h3>
+                                                <p class="text-gray-400">Founder, NexGen Startup</p>
+                                                
+                                                <!-- Client company badge -->
+                                                <span class="inline-block mt-1 px-2 py-0.5 bg-indigo-500/10 rounded-full text-xs text-indigo-300 border border-indigo-500/20">
+                                                    <i class="fas fa-rocket mr-1"></i>Startup
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <p class="text-gray-100 italic text-lg">"The team at CodeHack delivered our project ahead of schedule with outstanding quality. Highly recommended!"</p>
-                                <div class="mt-6 flex justify-center">
-                                    <div class="flex text-yellow-400">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <h3 class="mt-4 text-xl font-semibold text-purple-400">- Alex Johnson, Startup Founder</h3>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Navigation Arrows with adjusted positioning -->
-                    <div class="swiper-button-prev text-purple-500 hover:text-pink-500 transition-colors" style="left: 10px; transform: translateY(-50%); z-index: 20;">
-                        <i class="fas fa-chevron-circle-left text-4xl"></i>
-                    </div>
-                    <div class="swiper-button-next text-purple-500 hover:text-pink-500 transition-colors" style="right: 10px; transform: translateY(-50%); z-index: 20;">
-                        <i class="fas fa-chevron-circle-right text-4xl"></i>
+                    <!-- Custom navigation arrows with animations -->
+                    <div class="absolute z-20 w-full flex justify-between items-center top-1/2 transform -translate-y-1/2 px-2 md:px-6">
+                        <div class="swiper-button-prev w-12 h-12 group flex items-center justify-center bg-black/30 backdrop-filter backdrop-blur-lg rounded-full border border-white/10 cursor-pointer hover:border-pink-500/50 transition-all duration-300">
+                            <i class="fas fa-chevron-left text-white/50 group-hover:text-pink-400 transition-colors"></i>
+                        </div>
+                        <div class="swiper-button-next w-12 h-12 group flex items-center justify-center bg-black/30 backdrop-filter backdrop-blur-lg rounded-full border border-white/10 cursor-pointer hover:border-pink-500/50 transition-all duration-300">
+                            <i class="fas fa-chevron-right text-white/50 group-hover:text-pink-400 transition-colors"></i>
+                        </div>
                     </div>
                 </div>
+                
+                <!-- Custom pagination with animated dots -->
+                <div class="swiper-pagination flex justify-center space-x-2 mt-8"></div>
+                
+                <!-- Bottom quote icon for decoration -->
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-6xl text-purple-500/20 z-0">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+            
+            <!-- Testimonial prompt -->
+            <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="200">
+                <a href="#contact" class="inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-transparent via-purple-500/20 to-transparent border border-purple-500/30 rounded-lg text-white hover:bg-purple-500/20 transition-all group">
+                    <span class="text-sm">Have a project for us?</span>
+                    <span class="font-medium">Share Your Experience</span>
+                    <i class="fas fa-arrow-right transform group-hover:translate-x-2 transition-transform"></i>
+                </a>
             </div>
         </div>
+        
+        <!-- Add animation keyframes -->
+        <style>
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+                100% { transform: translateY(0px); }
+            }
+            
+            @keyframes pulse {
+                0% { opacity: 0.3; transform: scale(1); }
+                50% { opacity: 0.6; transform: scale(1.1); }
+                100% { opacity: 0.3; transform: scale(1); }
+            }
+            
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                background: rgba(255,255,255,0.2);
+                border-radius: 50%;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+            
+            .swiper-pagination-bullet-active {
+                background: linear-gradient(to right, #ec4899, #8b5cf6);
+                width: 30px;
+                border-radius: 5px;
+            }
+        </style>
+        
+        <!-- JavaScript enhancements for the testimonial slider -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Initialize enhanced testimonial slider
+                const testimonialsSwiper = new Swiper('#testimonials .swiper-container', {
+                    loop: true,
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    coverflowEffect: {
+                        rotate: 10,
+                        stretch: 0,
+                        depth: 200,
+                        modifier: 1,
+                        slideShadows: false,
+                    },
+                    pagination: {
+                        el: '#testimonials .swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '#testimonials .swiper-button-next',
+                        prevEl: '#testimonials .swiper-button-prev',
+                    },
+                    on: {
+                        slideChange: function() {
+                            // Add entrance animation to active slide content
+                            const activeSlide = this.slides[this.activeIndex];
+                            if (activeSlide) {
+                                const content = activeSlide.querySelector('p');
+                                const client = activeSlide.querySelector('.flex.items-center');
+                                const stars = activeSlide.querySelector('.flex.space-x-1');
+                                
+                                // Reset and play animations
+                                [content, client, stars].forEach((el, i) => {
+                                    if (el) {
+                                        el.style.opacity = '0';
+                                        el.style.transform = 'translateY(20px)';
+                                        
+                                        setTimeout(() => {
+                                            el.style.transition = 'all 0.5s ease';
+                                            el.style.opacity = '1';
+                                            el.style.transform = 'translateY(0)';
+                                        }, 100 * i);
+                                    }
+                                });
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
     </section>
     <!-- Enhanced Contact Section with Dynamic Background -->
     <section id="contact" class="py-20 px-6 relative" data-aos="fade-up">
@@ -971,145 +1741,74 @@
         });
     </script>
 
-    <!-- Enhanced Footer with Dynamic Background -->
-    <footer class="py-16 relative overflow-hidden">
-        <!-- Dynamic background -->
-        <div class="absolute inset-0 z-0">
-            <!-- Gradient background -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
-            
-            <!-- Animated grid pattern -->
-            <div class="absolute inset-0 opacity-10" 
-                style="background-image: linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(to right, #4f46e5 1px, transparent 1px);
-                background-size: 40px 40px;"></div>
-                
-            <!-- Moving particles -->
-            <div id="footer-particles" class="absolute inset-0"></div>
-        </div>
-        
-        <div class="max-w-6xl mx-auto px-6 relative z-10">
-            <!-- Footer top section -->
-            <div class="flex flex-col md:flex-row justify-between mb-12 pb-12 border-b border-gray-800">
-                <!-- Logo & description -->
-                <div class="mb-8 md:mb-0 md:w-1/3">
-                    <div class="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text mb-4">CodeHack</div>
-                    <p class="text-gray-400 mb-6">Empowering your digital presence with cutting-edge tech solutions at student-friendly prices.</p>
+        <!-- Enhanced Footer -->
+        <footer class="py-16 relative overflow-hidden bg-gradient-to-b from-gray-900 to-black">
+            <div class="max-w-6xl mx-auto px-6 relative z-10">
+                <!-- Footer top section -->
+                <div class="flex flex-col md:flex-row justify-between mb-12 pb-12 border-b border-gray-800">
+                    <!-- Logo & description -->
+                    <div class="mb-8 md:mb-0 md:w-1/3">
+                        <div class="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text mb-4">CodeHack</div>
+                        <p class="text-gray-400 mb-6">Empowering your digital presence with cutting-edge tech solutions at student-friendly prices.</p>
+                        
+                        <!-- Social media links -->
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
                     
-                    <!-- Enhanced social media links -->
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                    <!-- Quick links -->
+                    <div class="mb-8 md:mb-0 md:w-1/4">
+                        <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="index.html#home" class="text-gray-400 hover:text-pink-400 transition-colors">Home</a></li>
+                            <li><a href="index.html#services" class="text-gray-400 hover:text-pink-400 transition-colors">Services</a></li>
+                            <li><a href="index.html#testimonials" class="text-gray-400 hover:text-pink-400 transition-colors">Testimonials</a></li>
+                            <li><a href="index.html#portfolio" class="text-gray-400 hover:text-pink-400 transition-colors">Portfolio</a></li>
+                            <li><a href="team.html" class="text-gray-400 hover:text-pink-400 transition-colors">Our Team</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact info -->
+                    <div class="mb-8 md:mb-0 md:w-1/4">
+                        <h4 class="text-white text-lg font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-purple-500 mr-3"></i>
+                                <a href="mailto:info@codehack.tech" class="text-gray-400 hover:text-pink-400 transition-colors">info@codehack.tech</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt text-purple-500 mr-3"></i>
+                                <span class="text-gray-400">(+91) 9876 543 210</span>
+                            </li>
+                            <li class="flex items-center">S</li>
+                                <i class="fas fa-map-marker-alt text-purple-500 mr-3"></i>
+                                <span class="text-gray-400">Bangalore, India</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 
-                <!-- Quick links -->
-                <div class="mb-8 md:mb-0 md:w-1/4">
-                    <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-pink-400 transition-colors">Home</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-pink-400 transition-colors">Services</a></li>
-                        <li><a href="#testimonials" class="text-gray-400 hover:text-pink-400 transition-colors">Testimonials</a></li>
-                        <li><a href="#portfolio" class="text-gray-400 hover:text-pink-400 transition-colors">Portfolio</a></li>
-                        <li><a href="team.html" class="text-gray-400 hover:text-pink-400 transition-colors">Our Team</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact info -->
-                <div class="mb-8 md:mb-0 md:w-1/4">
-                    <h4 class="text-white text-lg font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope text-purple-500 mr-3"></i>
-                            <a href="mailto:info@codehack.tech" class="text-gray-400 hover:text-pink-400 transition-colors">info@codehack.tech</a>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone-alt text-purple-500 mr-3"></i>
-                            <span class="text-gray-400">(+91) 9876 543 210</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-purple-500 mr-3"></i>
-                            <span class="text-gray-400">Bangalore, India</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Newsletter -->
-                <div class="md:w-1/4">
-                    <h4 class="text-white text-lg font-semibold mb-4">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">Stay updated with our latest services and offers.</p>
-                    <form class="flex">
-                        <input type="email" placeholder="Your email" class="px-3 py-2 bg-gray-800 text-white rounded-l-md focus:outline-none focus:ring-1 focus:ring-purple-500 w-full">
-                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-r-md hover:opacity-90 transition-opacity">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+                <!-- Footer bottom -->
+                <div class="text-center">
+                    <p class="text-gray-500">© 2025 CodeHack. All rights reserved.</p>
+                    <p class="text-gray-600 text-sm mt-2 flex items-center justify-center">
+                        Designed with <i class="fas fa-heart text-pink-500 mx-1 animate-pulse"></i> by CodeHack
+                    </p>
                 </div>
             </div>
-            
-            <!-- Footer bottom -->
-            <div class="text-center">
-                <p class="text-gray-500">© 2025 CodeHack. All rights reserved.</p>
-                <p class="text-gray-600 text-sm mt-2 flex items-center justify-center">
-                    Designed with <i class="fas fa-heart text-pink-500 mx-1 animate-pulse"></i> by CodeHack
-                </p>
-            </div>
-        </div>
-        
-        <!-- Add script for footer particles animation -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                createFooterParticles();
-            });
-            
-            function createFooterParticles() {
-                const container = document.getElementById('footer-particles');
-                const colors = ['#4f46e5', '#ec4899', '#8b5cf6'];
-                
-                for (let i = 0; i < 30; i++) {
-                    const particle = document.createElement('div');
-                    const size = Math.random() * 4 + 1;
-                    const color = colors[Math.floor(Math.random() * colors.length)];
-                    
-                    particle.style.position = 'absolute';
-                    particle.style.width = `${size}px`;
-                    particle.style.height = `${size}px`;
-                    particle.style.background = color;
-                    particle.style.borderRadius = '50%';
-                    particle.style.opacity = Math.random() * 0.3 + 0.1;
-                    particle.style.boxShadow = `0 0 ${size + 2}px ${color}`;
-                    
-                    // Random position
-                    particle.style.left = `${Math.random() * 100}%`;
-                    particle.style.top = `${Math.random() * 100}%`;
-                    
-                    // Animation
-                    const duration = Math.random() * 20 + 10;
-                    const delay = Math.random() * 5;
-                    
-                    particle.animate([
-                        { transform: 'translateY(0) rotate(0deg)', opacity: particle.style.opacity },
-                        { transform: `translateY(-${Math.random() * 100 + 50}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
-                    ], {
-                        duration: duration * 1000,
-                        delay: delay * 1000,
-                        iterations: Infinity
-                    });
-                    
-                    container.appendChild(particle);
-                }
-            }
-        </script>
-    </footer>
+        </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

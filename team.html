@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Keep existing meta tags and links -->
+    <script>
+        // Prevent flash of white background
+        document.documentElement.style.backgroundColor = "#090A0F";
+        document.body.style.backgroundColor = "#090A0F";
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-</div>scale=1.0">
+    <title>Our Team - CodeHack</title>
+    <!-- Basic Meta Tags -->
+    <meta name="description" content="Meet the founders of CodeHack. Learn about the team behind our tech services.">
+    <meta name="keywords" content="CodeHack team, founders, tech services, Karamveer Singh Oberoi, Ayush Chainani">
+    <meta name="author" content="CodeHack">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://karamveer2648.github.io/codehack-website/codehack.png" type="image/png">
+    <link rel="shortcut icon" href="https://karamveer2648.github.io/codehack-website/codehack.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta name="theme-color" content="#090A0F">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codehack.tech/team.html">
+    <meta property="og:title" content="Meet Our Team - CodeHack">
+    <meta property="og:description" content="Meet the founders of CodeHack. Learn about the team behind our tech services.">
+    <meta property="og:image" content="https://karamveer2648.github.io/codehack-website/codehack.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@1.4.0/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            background-color: #090A0F;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Enhanced backgrounds for different sections */
+        #team-hero {
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #team-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM0ZjQ2ZTUxMCI+PC9yZWN0Pgo8L3N2Zz4=');
+            opacity: 0.1;
+        }
+
+        #founders-section {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            position: relative;
+        }
+        
+        #founders-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            z-index: 0;
+        }
+
+        .nav-active {
+            backdrop-filter: blur(10px);
+            background: rgba(15, 12, 41, 0.8);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .hover-zoom {
+            transition: transform 0.5s, box-shadow 0.3s;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .glass-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            z-index: 10;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .team-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(225deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 60%);
+            z-index: -1;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(79, 70, 229, 0.5);
+        }
+
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Stars animation for hero section */
+        .stars {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background: white;
+            z-index: 0;
+        }
+
+        @keyframes animStar {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-2000px); }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0f0f0f;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4f46e5;
+            border-radius: 5px;
+        }
+        
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-tag:hover {
+            background: rgba(236, 72, 153, 0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-white font-sans scroll-smooth">
+
+    <!-- Enhanced Responsive Navbar -->
+    <header id="navbar" class="fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300">
+        <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">CodeHack</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="index.html#home" class="text-white hover:text-pink-400 transition-colors">Home</a>
+            <a href="index.html#services" class="text-white hover:text-pink-400 transition-colors">Services</a>
+            <a href="index.html#testimonials" class="text-white hover:text-pink-400 transition-colors">Testimonials</a>
+            <a href="team.html" class="text-pink-400 transition-colors">Our Team</a>
+            <a href="index.html#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
+        </nav>
+        
+        <!-- CTA Button (Desktop) -->
+        <div class="hidden md:block">
+            <a href="index.html#contact" class="px-5 py-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-medium hover:scale-105 transition">Get a Quote</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg border-b border-purple-500 shadow-xl p-6 md:hidden">
+            <div class="flex flex-col space-y-4 items-center">
+                <a href="index.html#home" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Home</a>
+                <a href="index.html#services" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Services</a>
+                <a href="index.html#testimonials" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Testimonials</a>
+                <a href="team.html" class="text-pink-400 transition-colors w-full text-center py-2">Our Team</a>
+                <a href="index.html#contact" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Contact</a>
+                <a href="index.html#contact" class="px-5 py-2 w-full text-center bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-medium hover:scale-105 transition">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Team Hero Section -->
+    <section id="team-hero" class="min-h-[60vh] flex items-center justify-center text-center px-4 pt-24 pb-16 relative" data-aos="fade-up">
+        <!-- Stars background -->
+        <div id="stars-container"></div>
+        
+        <div class="z-10 relative">
+            <h1 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text drop-shadow-lg mb-6">Meet Our Team</h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-300">The brilliant minds behind CodeHack, dedicated to revolutionizing digital solutions. We're a small team with big ideas, delivering professional tech services at student-friendly prices.</p>
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section id="founders-section" class="py-20 px-6 relative">
+        <!-- Animated background shapes -->
+        <div class="absolute inset-0 overflow-hidden z-0">
+            <div class="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-purple-500/10 to-transparent rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-l from-pink-500/10 to-transparent rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto z-10 relative">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="inline-block px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 text-purple-300 text-sm font-medium mb-3">THE VISIONARIES</span>
+                <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Our Founders</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16 relative">
+                <!-- Connecting element between founders -->
+                <div class="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-pink-500/20 to-blue-500/20 rounded-full z-10">
+                    <div class="absolute inset-2 bg-gray-900 rounded-full flex items-center justify-center">
+                        <i class="fas fa-code text-pink-500"></i>
+                    </div>
+                </div>
+                
+                <!-- Founder 1: Karamveer Singh Oberoi -->
+                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative bg-gradient-to-br from-indigo-900/40 to-purple-900/40 p-8">
+                        <!-- Decorative elements -->
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-purple-500/10 rounded-full blur-xl"></div>
+                        <div class="absolute bottom-10 left-10 w-20 h-20 bg-pink-500/10 rounded-full blur-lg"></div>
+                        
+                        <div class="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
+                            <!-- Image with animated border -->
+                            <div class="relative">
+                                <div class="w-48 h-48 rounded-xl overflow-hidden border-2 border-purple-500/50 group-hover:border-pink-500 transition-all duration-500 shadow-lg shadow-purple-500/20 group-hover:shadow-pink-500/30">
+                                    <img src="https://via.placeholder.com/300x300/1e293b/ffffff?text=Karamveer" alt="Karamveer Singh Oberoi" class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700">
+                                </div>
+                                <!-- Animated corner accent -->
+                                <div class="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-pink-500 opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-300"></div>
+                                <div class="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-pink-500 opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-300"></div>
+                            </div>
+                            
+                            <div class="text-center md:text-left flex-1">
+                                <h3 class="text-2xl font-bold text-white mb-1 relative inline-block">
+                                    Karamveer Singh Oberoi
+                                    <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300"></span>
+                                </h3>
+                                <p class="text-pink-400 font-medium mb-2">Co-Founder & CTO</p>
+                                
+                                <!-- Personal motto -->
+                                <div class="italic text-gray-400 text-sm mb-4 border-l-2 border-purple-500 pl-3">
+                                    "Building tomorrow's technology with today's innovation"
+                                </div>
+                                
+                                <p class="text-gray-300 mb-5">
+                                    Tech enthusiast and full-stack developer with expertise in web applications, AI solutions, and cloud infrastructure. Passionate about innovative coding practices and emerging technologies.
+                                </p>
+                                
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-purple-500 rounded-full text-sm text-purple-300 flex items-center gap-1">
+                                        <i class="fas fa-code text-xs"></i>Full-Stack Development
+                                    </span>
+                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-blue-500 rounded-full text-sm text-blue-300 flex items-center gap-1">
+                                        <i class="fas fa-brain text-xs"></i>AI/ML
+                                    </span>
+                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-pink-500 rounded-full text-sm text-pink-300 flex items-center gap-1">
+                                        <i class="fas fa-cloud text-xs"></i>Cloud Architecture
+                                    </span>
+                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-green-500 rounded-full text-sm text-green-300 flex items-center gap-1">
+                                        <i class="fas fa-server text-xs"></i>DevOps
+                                    </span>
+                                </div>
+                                
+                                <div class="flex space-x-3 justify-center md:justify-start">
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-600 hover:text-white transform hover:-translate-y-2 transition-all">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-gray-700 hover:text-white transform hover:-translate-y-2 transition-all">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-400 hover:text-white transform hover:-translate-y-2 transition-all">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-pink-500 hover:text-white transform hover:-translate-y-2 transition-all">
+                                        <i class="fas fa-globe"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom bar that reveals on hover -->
+                    <div class="h-1.5 bg-gradient-to-r from-purple-500 to-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                </div>
+                
+                <!-- Founder 2: Ayush Chainani -->
+                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative bg-gradient-to-br from-blue-900/40 to-indigo-900/40 p-8">
+                        <!-- Decorative elements -->
+                        <div class="absolute top-0 left-0 w-40 h-40 bg-blue-500/10 rounded-full blur-xl"></div>
+                        <div class="absolute bottom-10 right-10 w-20 h-20 bg-indigo-500/10 rounded-full blur-lg"></div>
+                        
+                        <div class="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
+                            <!-- Image with animated border -->
+                            <div class="relative">
+                                <div class="w-48 h-48 rounded-xl overflow-hidden border-2 border-blue-500/50 group-hover:border-indigo-500 transition-all duration-500 shadow-lg shadow-blue-500/20 group-hover:shadow-indigo-500/30">
+                                    <img src="https://via.placeholder.com/300x300/1e293b/ffffff?text=Ayush" alt="Ayush Chainani" class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700">
+                                </div>
+                                <!-- Animated corner accent -->
+                                <div class="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-300"></div>
+                                <div class="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-300"></div>
+                            </div>
+                            
+                            <div class="text-center md:text-left flex-1">
+                                <h3 class="text-2xl font-bold text-white mb-1 relative inline-block">
+                                    Ayush Chainani
+                                    <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 transition-all duration-300"></span>
+                                </h3>
+                                <p class="text-blue-400 font-medium mb-2">Co-Founder & CEO</p>
+                                
+                                <!-- Personal motto -->
+                                <div class="italic text-gray-400 text-sm mb-4 border-l-2 border-blue-500 pl-3">
+                                    "Where vision meets execution to create exceptional experiences"
+                                </div>
+                                
+                                <p class="text-gray-300 mb-5">
+                                    Visionary strategist and UI/UX specialist focused on creating seamless digital experiences. Combines business acumen with technical knowledge to deliver exceptional solutions for clients.
+                                </p>
+                                
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-indigo-500 rounded-full text-sm text-indigo-300 flex items-center gap-1">
+                                        <i class="fas fa-paint-brush text-xs"></i>UI/UX Design
+                                    </span>
+                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-yellow-500 rounded-full text-sm text-yellow-300 flex items-center gap-1">
+                                        <i class="fas fa-tasks text-xs"></i>Project Management
+                                    </span>
+                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-red-500 rounded-full text-sm text-red-300 flex items-center gap-1">
+                                        <i class="fas fa-chart-line text-xs"></i>Business Development
+                                    </span>
+                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-cyan-500 rounded-full text-sm text-cyan-300 flex items-center gap-1">
+                                        <i class="fas fa-laptop-code text-xs"></i>Frontend Development
+                                    </span>
+                                </div>
+                                
+                                <div class="flex space-x-3 justify-center md:justify-start">
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-600 hover:text-white transform hover:-translate-y-2 transition-all">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-gray-700 hover:text-white transform hover:-translate-y-2 transition-all">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-400 hover:text-white transform hover:-translate-y-2 transition-all">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-pink-500 hover:text-white transform hover:-translate-y-2 transition-all">
+                                        <i class="fas fa-globe"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom bar that reveals on hover -->
+                    <div class="h-1.5 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="py-20 px-6 relative">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 overflow-hidden z-0">
+            <div class="absolute top-40 left-5 w-72 h-72 bg-gradient-to-br from-pink-500/10 to-transparent rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-tl from-purple-500/10 to-transparent rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <!-- Our Story Card -->
+            <div class="glass-card rounded-2xl p-0 overflow-hidden group mb-20" data-aos="fade-up" data-aos-duration="1200">
+                <div class="relative bg-gradient-to-br from-gray-900/80 to-gray-800/40 p-8 md:p-10">
+                    <!-- Decorative dots pattern -->
+                    <div class="absolute top-0 right-0 w-24 h-24 opacity-20">
+                        <div class="w-2 h-2 bg-pink-500 rounded-full absolute top-4 right-4"></div>
+                        <div class="w-2 h-2 bg-blue-500 rounded-full absolute top-10 right-10"></div>
+                        <div class="w-2 h-2 bg-purple-500 rounded-full absolute top-16 right-6"></div>
+                        <div class="w-2 h-2 bg-indigo-500 rounded-full absolute top-8 right-16"></div>
+                    </div>
+                    
+                    <div class="text-center mb-8" data-aos="fade-up" data-aos-delay="100">
+                        <span class="inline-block px-4 py-1 rounded-full bg-gradient-to-r from-pink-500/20 to-blue-500/20 text-blue-300 text-sm font-medium mb-3">JOURNEY</span>
+                        <h2 class="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Our Story</h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto mt-4 rounded-full"></div>
+                    </div>
+                    
+                    <div class="space-y-6 relative">
+                        <!-- Left decorative line -->
+                        <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-pink-500/0 via-pink-500/30 to-pink-500/0 hidden md:block"></div>
+                        
+                        <p class="text-gray-300 md:pl-8 relative group" data-aos="fade-up" data-aos-delay="200">
+                            <span class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 hidden md:flex items-center justify-center">
+                                <i class="fas fa-star text-xs text-white"></i>
+                            </span>
+                            CodeHack was born from a shared vision between two tech enthusiasts during their university days. Karamveer and Ayush recognized a significant gap in the market: quality tech services were often inaccessible to students and small businesses due to high costs.
+                        </p>
+                        
+                        <p class="text-gray-300 md:pl-8 relative group" data-aos="fade-up" data-aos-delay="300">
+                            <span class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-blue-600 hidden md:flex items-center justify-center">
+                                <i class="fas fa-code text-xs text-white"></i>
+                            </span>
+                            What started as a small project to help fellow students with their technical requirements quickly evolved into a comprehensive tech service solution. Today, CodeHack bridges the gap between professional development and affordability, making cutting-edge technology accessible to everyone.
+                        </p>
+                        
+                        <p class="text-gray-300 md:pl-8 relative group" data-aos="fade-up" data-aos-delay="400">
+                            <span class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 hidden md:flex items-center justify-center">
+                                <i class="fas fa-rocket text-xs text-white"></i>
+                            </span>
+                            Our mission remains unchanged: to provide professional-grade tech services at student-friendly prices, without compromising on quality or innovation. With each project, we continue to expand our expertise and refine our approach, ensuring our clients receive the best possible solutions.
+                        </p>
+                    </div>
+                </div>
+                <!-- Bottom bar that reveals on hover -->
+                <div class="h-1.5 bg-gradient-to-r from-pink-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            </div>
+            
+            <!-- Our Values Section -->
+            <div class="mb-16 text-center" data-aos="fade-up">
+                <span class="inline-block px-4 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-pink-300 text-sm font-medium mb-3">PRINCIPLES</span>
+                <h2 class="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Our Values</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Innovation Card -->
+                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative bg-gradient-to-br from-pink-900/30 to-pink-900/10 p-8 h-full">
+                        <!-- Decorative elements -->
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-pink-500/5 rounded-full blur-xl"></div>
+                        
+                        <div class="flex flex-col items-center text-center relative z-10 h-full">
+                            <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all duration-300">
+                                <i class="fas fa-lightbulb text-2xl text-white"></i>
+                            </div>
+                            
+                            <h3 class="text-xl font-bold mb-4 text-white relative inline-block">
+                                Innovation
+                                <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-pink-500 to-purple-500 transition-all duration-300"></span>
+                            </h3>
+                            
+                            <p class="text-gray-300">We constantly explore new technologies and approaches to deliver cutting-edge solutions that stay ahead of industry trends.</p>
+                        </div>
+                    </div>
+                    <!-- Bottom bar that reveals on hover -->
+                    <div class="h-1.5 bg-gradient-to-r from-pink-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                </div>
+                
+                <!-- Accessibility Card -->
+                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative bg-gradient-to-br from-purple-900/30 to-purple-900/10 p-8 h-full">
+                        <!-- Decorative elements -->
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/5 rounded-full blur-xl"></div>
+                        
+                        <div class="flex flex-col items-center text-center relative z-10 h-full">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all duration-300">
+                                <i class="fas fa-handshake text-2xl text-white"></i>
+                            </div>
+                            
+                            <h3 class="text-xl font-bold mb-4 text-white relative inline-block">
+                                Accessibility
+                                <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300"></span>
+                            </h3>
+                            
+                            <p class="text-gray-300">We believe quality tech services should be accessible to everyone, regardless of budget constraints or technical background.</p>
+                        </div>
+                    </div>
+                    <!-- Bottom bar that reveals on hover -->
+                    <div class="h-1.5 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                </div>
+                
+                <!-- Excellence Card -->
+                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative bg-gradient-to-br from-blue-900/30 to-blue-900/10 p-8 h-full">
+                        <!-- Decorative elements -->
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-full blur-xl"></div>
+                        
+                        <div class="flex flex-col items-center text-center relative z-10 h-full">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-full flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all duration-300">
+                                <i class="fas fa-award text-2xl text-white"></i>
+                            </div>
+                            
+                            <h3 class="text-xl font-bold mb-4 text-white relative inline-block">
+                                Excellence
+                                <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300"></span>
+                            </h3>
+                            
+                            <p class="text-gray-300">We never compromise on quality, ensuring each project meets professional standards and exceeds client expectations.</p>
+                        </div>
+                    </div>
+                    <!-- Bottom bar that reveals on hover -->
+                    <div class="h-1.5 bg-gradient-to-r from-purple-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced CTA Section -->
+    <section class="py-16 px-6 relative overflow-hidden">
+        <!-- Background elements -->
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900 to-black z-0"></div>
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"></div>
+        
+        <!-- Animated particles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-10 left-10 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-10 right-10 w-40 h-40 bg-pink-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-blue-500/5 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto glass-card rounded-2xl p-10 text-center relative z-10 border border-gray-800 shadow-xl" data-aos="zoom-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Ready to work with us?</h2>
+            
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Get in touch to discuss how we can help bring your ideas to life with our technical expertise and creative approach!</p>
+            
+            <a href="index.html#contact" class="relative inline-flex group">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl blur group-hover:blur-md transition-all duration-300 transform group-hover:scale-110 opacity-70"></div>
+                <button class="relative px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-semibold text-white transform transition-transform duration-300">
+                    <span class="relative flex items-center gap-2">
+                        <span>Contact Us Today</span>
+                        <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="py-16 relative overflow-hidden bg-gradient-to-b from-gray-900 to-black">
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <!-- Footer top section -->
+            <div class="flex flex-col md:flex-row justify-between mb-12 pb-12 border-b border-gray-800">
+                <!-- Logo & description -->
+                <div class="mb-8 md:mb-0 md:w-1/3">
+                    <div class="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text mb-4">CodeHack</div>
+                    <p class="text-gray-400 mb-6">Empowering your digital presence with cutting-edge tech solutions at student-friendly prices.</p>
+                    
+                    <!-- Social media links -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="mb-8 md:mb-0 md:w-1/4">
+                    <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#home" class="text-gray-400 hover:text-pink-400 transition-colors">Home</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-pink-400 transition-colors">Services</a></li>
+                        <li><a href="index.html#testimonials" class="text-gray-400 hover:text-pink-400 transition-colors">Testimonials</a></li>
+                        <li><a href="index.html#portfolio" class="text-gray-400 hover:text-pink-400 transition-colors">Portfolio</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-pink-400 transition-colors">Our Team</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact info -->
+                <div class="mb-8 md:mb-0 md:w-1/4">
+                    <h4 class="text-white text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-purple-500 mr-3"></i>
+                            <a href="mailto:info@codehack.tech" class="text-gray-400 hover:text-pink-400 transition-colors">info@codehack.tech</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-purple-500 mr-3"></i>
+                            <span class="text-gray-400">(+91) 9876 543 210</span>
+                        </li>
+                        <li class="flex items-center">S</li>
+                            <i class="fas fa-map-marker-alt text-purple-500 mr-3"></i>
+                            <span class="text-gray-400">Bangalore, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer bottom -->
+            <div class="text-center">
+                <p class="text-gray-500">© 2025 CodeHack. All rights reserved.</p>
+                <p class="text-gray-600 text-sm mt-2 flex items-center justify-center">
+                    Designed with <i class="fas fa-heart text-pink-500 mx-1 animate-pulse"></i> by CodeHack
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: true,
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('nav-active');
+            } else {
+                navbar.classList.remove('nav-active');
+            }
+        };
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Create stars for hero section background
+        function generateStars() {
+            const starsContainer = document.getElementById('stars-container');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.classList.add('stars');
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.width = `${Math.random() * 2 + 1}px`;
+                star.style.height = star.style.width;
+                star.style.animationName = 'animStar';
+                star.style.animationDuration = `${Math.random() * 100 + 50}s`;
+                star.style.animationTimingFunction = 'linear';
+                star.style.animationIterationCount = 'infinite';
+                starsContainer.appendChild(star);
+            }
+        }
+        
+        generateStars();
+    </script>
+</body>
+
+</html>
