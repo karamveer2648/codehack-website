@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@1.4.0/dist/flowbite.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         body {
@@ -86,7 +87,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20">
+    <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20" data-aos="fade-up">
         <div>
             <img src="codehack.png" alt="CodeHack Logo" class="mx-auto w-40 mb-4" loading="lazy">
             <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">TECH SERVICES BY CODEHACK</h1>
@@ -100,43 +101,24 @@
     <!-- Services Section -->
     <section id="services" class="py-20 px-6 bg-darker">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Our Services</h2>
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Services</h2>
             <div class="grid gap-8 md:grid-cols-3">
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="text-2xl font-semibold mb-4">Static & Dynamic Website Development</h3>
                     <p class="text-gray-400">Professional websites tailored to your needs.</p>
                 </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="text-2xl font-semibold mb-4">Full Stack Web Apps</h3>
                     <p class="text-gray-400">Robust and scalable web applications.</p>
                 </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="300">
                     <h3 class="text-2xl font-semibold mb-4">AI-Powered Tools & Bots</h3>
                     <p class="text-gray-400">Custom AI solutions for automation and innovation.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Portfolio Sites</h3>
-                    <p class="text-gray-400">Showcase your work with stunning portfolio websites.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Dashboards & Admin Panels</h3>
-                    <p class="text-gray-400">Interactive dashboards for data visualization and management.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Hosting & Deployment</h3>
-                    <p class="text-gray-400">Reliable hosting and deployment services.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Tech Consultation</h3>
-                    <p class="text-gray-400">Strategic IT advice to scale your ideas with technology.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Final Year Projects</h3>
-                    <p class="text-gray-400">Custom-built and guided projects for IT & CS students.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-20 px-6 bg-dark">
         <div class="max-w-6xl mx-auto text-center">
@@ -160,63 +142,11 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-content hidden" id="apps" data-aos="fade-up">
-                <div class="grid gap-8 md:grid-cols-3">
-                    <div class="hover-zoom">
-                        <img src="app1.jpg" alt="App 1" class="gallery-img rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold mt-4">App 1</h3>
-                        <p class="text-gray-400">Full Stack Web Apps</p>
-                    </div>
-                    <div class="hover-zoom">
-                        <img src="app2.jpg" alt="App 2" class="gallery-img rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold mt-4">App 2</h3>
-                        <p class="text-gray-400">Dashboards & Admin Panels</p>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-content hidden" id="ai-tools" data-aos="fade-up">
-                <div class="grid gap-8 md:grid-cols-3">
-                    <div class="hover-zoom">
-                        <img src="ai1.jpg" alt="AI Tool 1" class="gallery-img rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold mt-4">AI Tool 1</h3>
-                        <p class="text-gray-400">AI-Powered Tools & Bots</p>
-                    </div>
-                    <div class="hover-zoom">
-                        <img src="ai2.jpg" alt="AI Tool 2" class="gallery-img rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold mt-4">AI Tool 2</h3>
-                        <p class="text-gray-400">Tech Consultation</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <script>
-        const tabButtons = document.querySelectorAll('.tab-btn');
-        const tabContents = document.querySelectorAll('.tab-content');
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const targetTab = button.getAttribute('data-tab');
-
-                tabContents.forEach(content => {
-                    if (content.id === targetTab) {
-                        content.classList.remove('hidden');
-                    } else {
-                        content.classList.add('hidden');
-                    }
-                });
-            });
-        });
-    </script>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <!-- Contact Section -->
-    <section id="contact" class="py-20 px-6 bg-darker">
+    <section id="contact" class="py-20 px-6 bg-darker" data-aos="fade-up">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Get In Touch</h2>
             <p class="text-lg text-gray-300 mb-6">📞 Contact us:</p>
@@ -232,22 +162,31 @@
         <p>© 2025 CodeHack. All rights reserved.</p>
     </footer>
 
-    <script>
-        const navbar = document.getElementById('navbar');
-        window.onscroll = () => {
-            if (window.scrollY > 10) {
-                navbar.classList.add('nav-active');
-            } else {
-                navbar.classList.remove('nav-active');
-            }
-        };
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Increase duration for stronger animations
+        easing: 'ease-in-out', // Smooth easing for animations
+        once: false, // Allow animations to trigger on both scroll up and down
+        mirror: true, // Enable animations when scrolling back up
+    });
 
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+    const navbar = document.getElementById('navbar');
+    window.onscroll = () => {
+        if (window.scrollY > 10) {
+            navbar.classList.add('nav-active');
+        } else {
+            navbar.classList.remove('nav-active');
+        }
+    };
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
 </body>
 
 </html>
