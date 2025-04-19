@@ -137,7 +137,84 @@
             </div>
         </div>
     </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6 bg-dark">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Portfolio</h2>
+            <div class="mb-8" data-aos="fade-up">
+                <button class="tab-btn px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg mx-2 hover:scale-105 transition-transform" data-tab="websites">Websites</button>
+                <button class="tab-btn px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg mx-2 hover:scale-105 transition-transform" data-tab="apps">Web Apps</button>
+                <button class="tab-btn px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg mx-2 hover:scale-105 transition-transform" data-tab="ai-tools">AI Tools</button>
+            </div>
+            <div class="tab-content" id="websites" data-aos="fade-up">
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="hover-zoom">
+                        <img src="website1.jpg" alt="Website 1" class="gallery-img rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mt-4">Website 1</h3>
+                        <p class="text-gray-400">Static & Dynamic Website Development</p>
+                    </div>
+                    <div class="hover-zoom">
+                        <img src="website2.jpg" alt="Website 2" class="gallery-img rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mt-4">Website 2</h3>
+                        <p class="text-gray-400">Portfolio Sites</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content hidden" id="apps" data-aos="fade-up">
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="hover-zoom">
+                        <img src="app1.jpg" alt="App 1" class="gallery-img rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mt-4">App 1</h3>
+                        <p class="text-gray-400">Full Stack Web Apps</p>
+                    </div>
+                    <div class="hover-zoom">
+                        <img src="app2.jpg" alt="App 2" class="gallery-img rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mt-4">App 2</h3>
+                        <p class="text-gray-400">Dashboards & Admin Panels</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content hidden" id="ai-tools" data-aos="fade-up">
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="hover-zoom">
+                        <img src="ai1.jpg" alt="AI Tool 1" class="gallery-img rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mt-4">AI Tool 1</h3>
+                        <p class="text-gray-400">AI-Powered Tools & Bots</p>
+                    </div>
+                    <div class="hover-zoom">
+                        <img src="ai2.jpg" alt="AI Tool 2" class="gallery-img rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mt-4">AI Tool 2</h3>
+                        <p class="text-gray-400">Tech Consultation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+
+                tabContents.forEach(content => {
+                    if (content.id === targetTab) {
+                        content.classList.remove('hidden');
+                    } else {
+                        content.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 bg-darker">
         <div class="max-w-4xl mx-auto text-center">
