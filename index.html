@@ -2,272 +2,1174 @@
 <html lang="en">
 
 <head>
+    <!-- Keep existing meta tags and links -->
+    <script>
+        // Prevent flash of white background
+        document.documentElement.style.backgroundColor = "#090A0F";
+        document.body.style.backgroundColor = "#090A0F";
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeHack - Tech Services</title>
-    <meta name="description" content="CodeHack offers professional tech solutions at student-friendly prices. Specializing in websites, full-stack apps, and AI-powered tools.">
-    <meta name="keywords" content="Web Development, AI Tools, Full Stack, Portfolio, CodeHack, Tailwind, Django, MERN">
-    <meta name="author" content="CodeHack - Ayush Chainani & Karamveer Singh Oberoi">
-    <link rel="icon" href="codehack.png" type="image/png">
-    <meta property="og:image" content="codehack.png">
-    <meta property="og:title" content="CodeHack - Tech Services">
-    <meta property="og:description" content="CodeHack offers professional tech solutions at student-friendly prices. Specializing in websites, full-stack apps, and AI-powered tools.">
-    <meta property="og:url" content="https://codehack.tech">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="CodeHack">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:locale:alternate" content="en_GB">
-    <meta property="og:site_name" content="CodeHack - Tech Services">
+    <!-- Other meta tags remain the same -->
     
-    <meta property="og:image:alt" content="CodeHack Banner">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@1.4.0/dist/flowbite.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <style>
+        html, body {
+            background-color: #090A0F;
+            margin: 0;
+            padding: 0;
+        }
+        
         body {
-            background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Enhanced backgrounds for different sections */
+        #home {
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #home::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM0ZjQ2ZTUxMCI+PC9yZWN0Pgo8L3N2Zz4=');
+            opacity: 0.1;
+        }
+
+        #services {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            position: relative;
+        }
+        
+        #services::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            z-index: 0;
+        }
+        
+        #testimonials {
+            background: linear-gradient(120deg, #0a0a1a 0%, #20204f 100%);
+            position: relative;
+        }
+        
+        #testimonials::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        #contact {
+            background: linear-gradient(135deg, #121212 0%, #1e1e2f 100%);
+            position: relative;
         }
 
         .nav-active {
             backdrop-filter: blur(10px);
             background: rgba(15, 12, 41, 0.8);
-            border-bottom: 1px solid #4f46e5;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
 
         .hover-zoom {
-            transition: transform 0.5s;
+            transition: transform 0.5s, box-shadow 0.3s;
         }
 
         .hover-zoom:hover {
             transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         }
 
-        .gallery-img {
-            transition: transform 0.4s, opacity 0.4s;
+        .glass-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
 
-        .gallery-img:hover {
-            transform: scale(1.05);
+        .service-card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            z-index: 10;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(225deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 60%);
+            z-index: -1;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(79, 70, 229, 0.5);
         }
 
-        .bg-dark {
-            background-color: #1f1f1f;
+        .glow-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .glow-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .glow-button:hover::after {
+            opacity: 1;
+        }
+        
+        /* Stars animation for hero section */
+        .stars {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background: white;
+            z-index: 0;
         }
 
-        .bg-darker {
-            background-color: #0f0f0f;
+        @keyframes animStar {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-2000px); }
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .service-tab-content {
+            transition: all 0.3s ease;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0f0f0f;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4f46e5;
+            border-radius: 5px;
         }
     </style>
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body class="text-white font-sans scroll-smooth">
 
-    <!-- Navbar -->
-    <header id="navbar" class="fixed w-full z-50 p-4 flex justify-between items-center">
+    <!-- Enhanced Responsive Navbar -->
+    <header id="navbar" class="fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300">
         <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">CodeHack</a>
-        <nav class="hidden md:flex space-x-6">
-            <a href="#home" class="hover:text-pink-400">Home</a>
-            <a href="#services" class="hover:text-pink-400">Services</a>
-            <a href="#portfolio" class="hover:text-pink-400">Portfolio</a>
-            <a href="#testimonials" class="hover:text-pink-400">Testimonials</a>
-            <a href="#contact" class="hover:text-pink-400">Contact</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="#home" class="text-white hover:text-pink-400 transition-colors">Home</a>
+            <a href="#services" class="text-white hover:text-pink-400 transition-colors">Services</a>
+            <a href="#testimonials" class="text-white hover:text-pink-400 transition-colors">Testimonials</a>
+            <a href="team.html" class="text-white hover:text-pink-400 transition-colors">Our Team</a>
+            <a href="#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
         </nav>
-        <div class="md:hidden">
-            <button id="menu-toggle" class="text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+        
+        <!-- CTA Button (Desktop) -->
+        <div class="hidden md:block">
+            <a href="#contact" class="px-5 py-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-medium hover:scale-105 transition glow-button">Get a Quote</a>
         </div>
-        <div id="mobile-menu" class="hidden absolute top-16 right-4 bg-[#1c1e35] rounded-lg shadow-lg py-2">
-            <a href="#home" class="block px-4 py-2 hover:text-pink-400">Home</a>
-            <a href="#services" class="block px-4 py-2 hover:text-pink-400">Services</a>
-            <a href="#portfolio" class="block px-4 py-2 hover:text-pink-400">Portfolio</a>
-            <a href="#testimonials" class="block px-4 py-2 hover:text-pink-400">Testimonials</a>
-            <a href="#contact" class="block px-4 py-2 hover:text-pink-400">Contact</a>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg border-b border-purple-500 shadow-xl p-6 md:hidden">
+            <div class="flex flex-col space-y-4 items-center">
+                <a href="#home" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Home</a>
+                <a href="#services" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Services</a>
+                <a href="#testimonials" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Testimonials</a>
+                <a href="team.html" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Our Team</a>
+                <a href="#contact" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Contact</a>
+                <a href="#contact" class="px-5 py-2 w-full text-center bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-medium hover:scale-105 transition glow-button">Get a Quote</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20" data-aos="fade-up">
-        <div>
-            <img src="codehack.png" alt="CodeHack Logo" class="mx-auto w-40 mb-4" loading="lazy">
-            <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">TECH SERVICES BY CODEHACK</h1>
-            <p class="mt-4 text-xl text-pink-300">Empowering Your Digital Presence</p>
-            <p class="mt-2 text-lg text-gray-300">🚀 Get Professional Tech Solutions at Student-Friendly Prices!</p>
-            <div class="mt-6"></div>
-            <a href="#services" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl shadow-lg hover:scale-105 transition-transform">Explore Services</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 px-6 bg-darker">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Services</h2>
-            <div class="grid gap-8 md:grid-cols-3">
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-2xl font-semibold mb-4">Static & Dynamic Website Development</h3>
-                    <p class="text-gray-400">Professional websites tailored to your needs.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-2xl font-semibold mb-4">Full Stack Web Apps</h3>
-                    <p class="text-gray-400">Robust and scalable web applications.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-2xl font-semibold mb-4">AI-Powered Tools & Bots</h3>
-                    <p class="text-gray-400">Custom AI solutions for automation and innovation.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="text-2xl font-semibold mb-4">Portfolio Sites</h3>
-                    <p class="text-gray-400">Showcase your work with stunning portfolio websites.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="500">
-                    <h3 class="text-2xl font-semibold mb-4">Dashboards & Admin Panels</h3>
-                    <p class="text-gray-400">Efficient and user-friendly management tools.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="600">
-                    <h3 class="text-2xl font-semibold mb-4">Hosting & Deployment</h3>
-                    <p class="text-gray-400">Reliable hosting and seamless deployment services.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="700">
-                    <h3 class="text-2xl font-semibold mb-4">Tech Consultation</h3>
-                    <p class="text-gray-400">Expert advice to bring your ideas to life.</p>
-                </div>
-                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg" data-aos="fade-up" data-aos-delay="800">
-                    <h3 class="text-2xl font-semibold mb-4">Final Year Diploma & Engineering Projects</h3>
-                    <p class="text-gray-400">Custom-built and guided projects for IT & CS students.</p>
-                </div>
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20 relative" data-aos="fade-up">
+        <!-- Stars background -->
+        <div id="stars-container"></div>
+        
+        <div class="z-10 relative">
+            <img src="codehack.png" alt="CodeHack Logo" class="mx-auto w-40 mb-4 hover:animate-pulse" width="160" height="160" loading="lazy">
+            <h1 class="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text drop-shadow-lg">TECH SERVICES BY CODEHACK</h1>
+            <p class="mt-6 text-xl text-pink-300">Empowering Your Digital Presence</p>
+            <p class="mt-4 text-lg text-gray-300">🚀 Get Professional Tech Solutions at Student-Friendly Prices!</p>
+            <div class="mt-10">
+                <a href="#services" class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl shadow-lg hover:scale-105 transition-transform glow-button animate-pulse">Explore Services</a>
             </div>
         </div>
+        
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 px-6 bg-dark">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Portfolio</h2>
-            <div class="mb-8" data-aos="fade-up">
-                <button class="tab-btn px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg mx-2 hover:scale-105 transition-transform" data-tab="websites">Websites</button>
-                <button class="tab-btn px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg mx-2 hover:scale-105 transition-transform" data-tab="apps">Web Apps</button>
-                <button class="tab-btn px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg mx-2 hover:scale-105 transition-transform" data-tab="ai-tools">AI Tools</button>
+    <!-- Enhanced Services Section -->
+    <section id="services" class="py-20 px-6 relative">
+        <div class="max-w-6xl mx-auto text-center z-10 relative">
+            <h2 class="text-5xl font-bold mb-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Services</h2>
+            
+            <!-- Service Categories Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <button class="service-tab-btn active px-4 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white text-sm md:text-base font-medium transition-all" data-tab="web-dev">Web Development</button>
+                <button class="service-tab-btn px-4 py-2 rounded-full bg-opacity-20 bg-white text-white text-sm md:text-base font-medium transition-all hover:bg-opacity-30" data-tab="app-dev">Applications</button>
+                <button class="service-tab-btn px-4 py-2 rounded-full bg-opacity-20 bg-white text-white text-sm md:text-base font-medium transition-all hover:bg-opacity-30" data-tab="ai-tools">AI Solutions</button>
+                <button class="service-tab-btn px-4 py-2 rounded-full bg-opacity-20 bg-white text-white text-sm md:text-base font-medium transition-all hover:bg-opacity-30" data-tab="projects">Student Projects</button>
+                <button class="service-tab-btn px-4 py-2 rounded-full bg-opacity-20 bg-white text-white text-sm md:text-base font-medium transition-all hover:bg-opacity-30" data-tab="tech-services">Tech Services</button>
             </div>
-            <div class="tab-content" id="websites" data-aos="fade-up">
+            <!-- Web Development Tab Content -->
+            <div id="web-dev" class="service-tab-content active">
                 <div class="grid gap-8 md:grid-cols-3">
-                    <div class="hover-zoom">
-                        <img src="website1.jpg" alt="Website 1" class="gallery-img rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold mt-4">Website 1</h3>
-                        <p class="text-gray-400">Static & Dynamic Website Development</p>
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-gradient-to-br from-pink-500 to-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-laptop-code text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Static Websites</h3>
+                        <p class="text-gray-300">Fast-loading, responsive websites with modern design principles perfect for small businesses.</p>
                     </div>
-                    <div class="hover-zoom">
-                        <img src="website2.jpg" alt="Website 2" class="gallery-img rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold mt-4">Website 2</h3>
-                        <p class="text-gray-400">Portfolio Sites</p>
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-gradient-to-br from-purple-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-cogs text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Dynamic Websites</h3>
+                        <p class="text-gray-300">Interactive websites with CMS integration, user authentication, and content management capabilities.</p>
+                    </div>
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-images text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Portfolio Sites</h3>
+                        <p class="text-gray-300">Showcase your work with beautiful, customized portfolio websites designed to highlight your achievements.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 px-6 bg-dark">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">What Our Clients Say</h2>
-            <div class="swiper-container" data-aos="fade-up">
-                <div class="swiper-wrapper">
-                    <!-- Testimonial 1 -->
-                    <div class="swiper-slide bg-darker rounded-2xl p-8 shadow-lg">
-                        <div class="flex items-center justify-center mb-4">
-                            <img src="client1.jpg" alt="Client 1" class="w-16 h-16 rounded-full border-2 border-pink-500">
+            
+            <!-- Applications Tab Content -->
+            <div id="app-dev" class="service-tab-content hidden">
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-indigo-500 to-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-server text-2xl text-white"></i>
                         </div>
-                        <p class="text-gray-300 italic">"CodeHack transformed our vision into reality. Their professionalism and creativity are unmatched!"</p>
-                        <h3 class="mt-4 text-lg font-semibold text-pink-400">- John Doe, CEO of TechCorp</h3>
+                        <h3 class="text-2xl font-semibold mb-4">Full Stack Web Apps</h3>
+                        <p class="text-gray-300">Robust applications with seamless frontend and backend integration using modern frameworks.</p>
                     </div>
-                    <!-- Testimonial 2 -->
-                    <div class="swiper-slide bg-darker rounded-2xl p-8 shadow-lg">
-                        <div class="flex items-center justify-center mb-4">
-                            <img src="client2.jpg" alt="Client 2" class="w-16 h-16 rounded-full border-2 border-purple-500">
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-green-500 to-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-chart-line text-2xl text-white"></i>
                         </div>
-                        <p class="text-gray-300 italic">"Their AI-powered tools boosted our productivity by 200%. Highly recommended!"</p>
-                        <h3 class="mt-4 text-lg font-semibold text-purple-400">- Jane Smith, Founder of InnovateAI</h3>
+                        <h3 class="text-2xl font-semibold mb-4">Dashboards & Admin Panels</h3>
+                        <p class="text-gray-300">Data-driven interfaces with analytics, reporting tools, and comprehensive admin controls.</p>
                     </div>
-                    <!-- Testimonial 3 -->
-                    <div class="swiper-slide bg-darker rounded-2xl p-8 shadow-lg">
-                        <div class="flex items-center justify-center mb-4">
-                            <img src="client3.jpg" alt="Client 3" class="w-16 h-16 rounded-full border-2 border-blue-500">
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-mobile-alt text-2xl text-white"></i>
                         </div>
-                        <p class="text-gray-300 italic">"The team at CodeHack is incredibly talented and easy to work with. A+ service!"</p>
-                        <h3 class="mt-4 text-lg font-semibold text-blue-400">- Alex Johnson, Freelancer</h3>
+                        <h3 class="text-2xl font-semibold mb-4">Progressive Web Apps</h3>
+                        <p class="text-gray-300">App-like experiences that work offline and load instantly, regardless of network state.</p>
                     </div>
                 </div>
-                <!-- Swiper Pagination -->
-                <div class="swiper-pagination mt-6"></div>
+            </div>
+            
+            <!-- AI Solutions Tab Content -->
+            <div id="ai-tools" class="service-tab-content hidden">
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-teal-500 to-teal-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-robot text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">AI-Powered Chatbots</h3>
+                        <p class="text-gray-300">Intelligent conversational interfaces to enhance customer support and user engagement.</p>
+                    </div>
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-red-500 to-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-brain text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">ML Integration</h3>
+                        <p class="text-gray-300">Implement machine learning models to automate processes and gain insights from your data.</p>
+                    </div>
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-orange-500 to-orange-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-cog text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Automation Tools</h3>
+                        <p class="text-gray-300">Custom automation solutions to streamline workflows and increase operational efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Student Projects Tab Content -->
+            <div id="projects" class="service-tab-content hidden">
+                <div class="grid gap-8 md:grid-cols-2">
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-pink-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Final Year Projects</h3>
+                        <p class="text-gray-300">Custom-built projects for IT & CS students with complete documentation and guidance throughout development.</p>
+                        <ul class="mt-4 text-left text-gray-300">
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i> Web & Mobile Applications</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i> AI & Machine Learning</li>
+                            <li><i class="fas fa-check-circle text-green-400 mr-2"></i> IoT & Embedded Systems</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-blue-500 to-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-chalkboard-teacher text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Project Mentorship</h3>
+                        <p class="text-gray-300">One-on-one guidance for students working on their academic projects with expert feedback and support.</p>
+                        <ul class="mt-4 text-left text-gray-300">
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i> Technical Guidance</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-green-400 mr-2"></i> Code Reviews</li>
+                            <li><i class="fas fa-check-circle text-green-400 mr-2"></i> Documentation Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tech Services Tab Content -->
+            <div id="tech-services" class="service-tab-content hidden">
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-cyan-500 to-cyan-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-cloud-upload-alt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Hosting & Deployment</h3>
+                        <p class="text-gray-300">Secure and reliable hosting solutions with continuous deployment pipelines and maintenance.</p>
+                    </div>
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-purple-500 to-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-lightbulb text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Tech Consultation</h3>
+                        <p class="text-gray-300">Expert advice on technology stack selection, architecture design, and implementation strategies.</p>
+                    </div>
+                    
+                    <div class="service-card bg-opacity-10 bg-white backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+                        <div class="bg-gradient-to-br from-amber-500 to-amber-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-code-branch text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Version Control</h3>
+                        <p class="text-gray-300">Git repository setup and management with best practices for collaborative development.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SwiperJS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.service-tab-btn');
+            const tabContents = document.querySelectorAll('.service-tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-gradient-to-r', 'from-pink-500', 'to-purple-600');
+                        btn.classList.add('bg-opacity-20', 'bg-white');
+                    });
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active', 'bg-gradient-to-r', 'from-pink-500', 'to-purple-600');
+                    button.classList.remove('bg-opacity-20', 'bg-white');
+                    
+                    // Hide all tab contents
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show the selected tab content
+                    const tabId = button.getAttribute('data-tab');
+                    const tabContent = document.getElementById(tabId);
+                    if (tabContent) {
+                        tabContent.classList.remove('hidden');
+                        tabContent.classList.add('active');
+                    }
+                });
+            });
+            
+            // Apply lazy loading to service cards
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.service-card').forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+
+    <!-- Enhanced Portfolio Section with Dynamic Background -->
+    <section id="portfolio" class="py-20 px-6 relative" data-aos="fade-up">
+        <!-- Dynamic background -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-20">
+                <!-- Gradient overlays -->
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+                
+                <!-- Animated shapes -->
+                <div id="portfolio-shapes" class="absolute inset-0"></div>
+            </div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto text-center z-10 relative">
+            <h2 class="text-5xl font-bold mb-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">Our Portfolio</h2>
+            
+            <!-- Portfolio Filter Tabs -->
+            <div class="portfolio-filter mb-12 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active px-6 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium transition-all hover:shadow-lg" data-filter="all">All Projects</button>
+                <button class="filter-btn px-6 py-2 rounded-full bg-opacity-20 bg-white text-white font-medium transition-all hover:shadow-lg hover:bg-opacity-30" data-filter="web">Web Design</button>
+                <button class="filter-btn px-6 py-2 rounded-full bg-opacity-20 bg-white text-white font-medium transition-all hover:shadow-lg hover:bg-opacity-30" data-filter="app">Mobile Apps</button>
+                <button class="filter-btn px-6 py-2 rounded-full bg-opacity-20 bg-white text-white font-medium transition-all hover:shadow-lg hover:bg-opacity-30" data-filter="ui">UI/UX Design</button>
+            </div>
+            
+            <!-- Portfolio Gallery -->
+            <div class="portfolio-gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-web">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
+                        <img src="portfolio1.jpg" alt="E-commerce Website" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-300 mb-4">A full-featured online store with product management and payment gateway integration.</p>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Visit Site
+                                </a>
+                                <span class="text-blue-400">
+                                    <i class="fas fa-code mr-1"></i>Web Design
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-app">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
+                        <img src="portfolio2.jpg" alt="Fitness App" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Fitness Tracker App</h3>
+                            <p class="text-gray-300 mb-4">Mobile application for tracking workouts, nutrition, and health metrics.</p>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>View Details
+                                </a>
+                                <span class="text-green-400">
+                                    <i class="fas fa-mobile-alt mr-1"></i>Mobile App
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-ui">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
+                        <img src="portfolio3.jpg" alt="Dashboard UI" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Analytics Dashboard</h3>
+                            <p class="text-gray-300 mb-4">Modern UI design for a data analytics platform with intuitive visualizations.</p>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>View Project
+                                </a>
+                                <span class="text-purple-400">
+                                    <i class="fas fa-paint-brush mr-1"></i>UI/UX Design
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-web">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
+                        <img src="portfolio4.jpg" alt="Real Estate Website" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Real Estate Platform</h3>
+                            <p class="text-gray-300 mb-4">Property listing website with advanced search and virtual tour features.</p>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Visit Site
+                                </a>
+                                <span class="text-blue-400">
+                                    <i class="fas fa-code mr-1"></i>Web Design
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-app">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
+                        <img src="portfolio5.jpg" alt="Delivery App" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Food Delivery App</h3>
+                            <p class="text-gray-300 mb-4">Mobile application for ordering food with real-time delivery tracking.</p>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>View Details
+                                </a>
+                                <span class="text-green-400">
+                                    <i class="fas fa-mobile-alt mr-1"></i>Mobile App
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item group visible transition-all duration-500 filter-all filter-ui">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg hover-zoom glass-card">
+                        <img src="portfolio6.jpg" alt="Banking App UI" class="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Banking Application UI</h3>
+                            <p class="text-gray-300 mb-4">Secure and intuitive interface design for a mobile banking application.</p>
+                            <div class="flex justify-between">
+                                <a href="#" class="text-pink-400 hover:text-pink-300 transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>View Project
+                                </a>
+                                <span class="text-purple-400">
+                                    <i class="fas fa-paint-brush mr-1"></i>UI/UX Design
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize portfolio section when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Portfolio filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active', 'bg-gradient-to-r', 'from-pink-500', 'to-purple-600'));
+                    filterButtons.forEach(btn => btn.classList.add('bg-opacity-20', 'bg-white'));
+                    button.classList.remove('bg-opacity-20', 'bg-white');
+                    button.classList.add('active', 'bg-gradient-to-r', 'from-pink-500', 'to-purple-600');
+                    
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    // Filter items with smooth animation
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(`filter-${filterValue}`)) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.classList.add('visible');
+                                item.classList.remove('opacity-0', 'scale-95');
+                            }, 50);
+                        } else {
+                            item.classList.remove('visible');
+                            item.classList.add('opacity-0', 'scale-95');
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 500);
+                        }
+                    });
+                });
+            });
+            
+            // Create dynamic background for portfolio section
+            createPortfolioBackground();
+        });
+        
+        // Generate floating shapes for the portfolio background
+        function createPortfolioBackground() {
+            const container = document.getElementById('portfolio-shapes');
+            const colors = ['rgba(219, 39, 119, 0.1)', 'rgba(124, 58, 237, 0.1)', 'rgba(59, 130, 246, 0.1)'];
+            
+            for (let i = 0; i < 15; i++) {
+                const shape = document.createElement('div');
+                const size = Math.random() * 100 + 50;
+                
+                shape.style.position = 'absolute';
+                shape.style.width = `${size}px`;
+                shape.style.height = `${size}px`;
+                shape.style.borderRadius = Math.random() > 0.5 ? '50%' : `${Math.random() * 30}%`;
+                shape.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                shape.style.left = `${Math.random() * 100}%`;
+                shape.style.top = `${Math.random() * 100}%`;
+                shape.style.opacity = Math.random() * 0.6 + 0.2;
+                shape.style.filter = `blur(${Math.random() * 40 + 10}px)`;
+                shape.style.transform = `rotate(${Math.random() * 360}deg)`;
+                shape.style.transition = 'all 20s linear';
+                
+                // Set animation
+                shape.animate([
+                    { transform: `translate(0, 0) rotate(0deg)` },
+                    { transform: `translate(${(Math.random() - 0.5) * 40}px, ${(Math.random() - 0.5) * 40}px) rotate(${Math.random() * 360}deg)` }
+                ], {
+                    duration: Math.random() * 20000 + 10000,
+                    iterations: Infinity,
+                    direction: 'alternate',
+                    easing: 'ease-in-out'
+                });
+                
+                container.appendChild(shape);
+            }
+        }
+    </script>
+    <!-- Enhanced Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto text-center z-10 relative">
+            <h2 class="text-5xl font-bold mb-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">What Our Clients Say</h2>
+            
+            <div class="testimonial-slider relative max-w-3xl mx-auto overflow-hidden" data-aos="fade-up">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="glass-card rounded-2xl p-8 shadow-lg">
+                                <div class="flex items-center justify-center mb-6">
+                                    <div class="w-20 h-20 rounded-full border-4 border-pink-500 overflow-hidden">
+                                        <img src="client1.jpg" alt="Client 1" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <p class="text-gray-100 italic text-lg">"CodeHack transformed our vision into reality. Their professionalism and creativity are unmatched!"</p>
+                                <div class="mt-6 flex justify-center">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <h3 class="mt-4 text-xl font-semibold text-pink-400">- John Doe, CEO of TechCorp</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="glass-card rounded-2xl p-8 shadow-lg">
+                                <div class="flex items-center justify-center mb-6">
+                                    <div class="w-20 h-20 rounded-full border-4 border-blue-500 overflow-hidden">
+                                        <img src="client2.jpg" alt="Client 2" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <p class="text-gray-100 italic text-lg">"Working with CodeHack was a game-changer for our business. Their attention to detail is exceptional!"</p>
+                                <div class="mt-6 flex justify-center">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <h3 class="mt-4 text-xl font-semibold text-blue-400">- Jane Smith, Marketing Director</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="glass-card rounded-2xl p-8 shadow-lg">
+                                <div class="flex items-center justify-center mb-6">
+                                    <div class="w-20 h-20 rounded-full border-4 border-purple-500 overflow-hidden">
+                                        <img src="client3.jpg" alt="Client 3" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <p class="text-gray-100 italic text-lg">"The team at CodeHack delivered our project ahead of schedule with outstanding quality. Highly recommended!"</p>
+                                <div class="mt-6 flex justify-center">
+                                    <div class="flex text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <h3 class="mt-4 text-xl font-semibold text-purple-400">- Alex Johnson, Startup Founder</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows with adjusted positioning -->
+                    <div class="swiper-button-prev text-purple-500 hover:text-pink-500 transition-colors" style="left: 10px; transform: translateY(-50%); z-index: 20;">
+                        <i class="fas fa-chevron-circle-left text-4xl"></i>
+                    </div>
+                    <div class="swiper-button-next text-purple-500 hover:text-pink-500 transition-colors" style="right: 10px; transform: translateY(-50%); z-index: 20;">
+                        <i class="fas fa-chevron-circle-right text-4xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Enhanced Contact Section with Dynamic Background -->
+    <section id="contact" class="py-20 px-6 relative" data-aos="fade-up">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <!-- Grid pattern -->
+                <div class="absolute inset-0" style="background-image: radial-gradient(circle at 30% 50%, rgba(79, 70, 229, 0.1) 0%, transparent 25%), radial-gradient(circle at 70% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 25%)"></div>
+                
+                <!-- Floating particles -->
+                <div id="particles-container" class="particles-container"></div>
+            </div>
+        </div>
+        
+        <!-- Content container -->
+        <div class="max-w-4xl mx-auto text-center z-10 relative">
+            <h2 class="text-5xl font-bold mb-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Contact Us</h2>
+            
+            <div class="glass-card p-8 rounded-2xl border border-gray-800 shadow-2xl relative overflow-hidden">
+                <!-- Card glow effects -->
+                <div class="absolute -top-40 -right-40 w-80 h-80 bg-purple-600 rounded-full opacity-10 blur-3xl"></div>
+                <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-600 rounded-full opacity-10 blur-3xl"></div>
+                
+                <div class="relative z-10">
+                    <p class="text-xl text-gray-200 mb-6">Have a question or want to work with us?</p>
+                    <p class="text-xl text-pink-300 mb-8">Drop us a message!</p>
+                    
+                    <form class="mt-6 grid gap-6 max-w-xl mx-auto text-left" action="https://formspree.io/f/xanerjdr" method="POST">
+                        <div class="relative group">
+                            <input type="text" name="name" required placeholder="Your Name" class="w-full p-4 rounded-lg bg-opacity-10 bg-black backdrop-filter backdrop-blur-sm border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+                            <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-pink-500 to-purple-600 transition-all duration-300 group-hover:w-full"></div>
+                        </div>
+                        
+                        <div class="relative group">
+                            <input type="email" name="email" required placeholder="Your Email" class="w-full p-4 rounded-lg bg-opacity-10 bg-black backdrop-filter backdrop-blur-sm border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+                            <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-pink-500 to-purple-600 transition-all duration-300 group-hover:w-full"></div>
+                        </div>
+                        
+                        <div class="relative group">
+                            <textarea name="message" rows="5" required placeholder="Your Message" class="w-full p-4 rounded-lg bg-opacity-10 bg-black backdrop-filter backdrop-blur-sm border border-gray-700 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"></textarea>
+                            <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-pink-500 to-purple-600 transition-all duration-300 group-hover:w-full"></div>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-semibold hover:scale-105 transition glow-button relative overflow-hidden">
+                            <span class="relative z-10">Send Message</span>
+                        </button>
+                    </form>
+                    
+                    <div class="mt-8 text-gray-300">
+                        <p>Or visit our team page to learn more about us</p>
+                        <a href="team.html" class="inline-block mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl shadow-lg hover:scale-105 transition">
+                            <i class="fas fa-users mr-2"></i> Meet Our Team
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this script at the end of your JavaScript section -->
+    <script>
+        // Create animated particles for contact section background
+        function createContactParticles() {
+            const container = document.getElementById('particles-container');
+            const sectionHeight = document.getElementById('contact').offsetHeight;
+            const sectionWidth = document.getElementById('contact').offsetWidth;
+            
+            // Create particles
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                
+                // Random size between 2-6px
+                const size = Math.random() * 4 + 2;
+                
+                // Style the particle
+                particle.style.position = 'absolute';
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.borderRadius = '50%';
+                
+                // Random color (purple/pink/blue gradient colors)
+                const colors = ['rgba(255, 90, 180, 0.9)', 'rgba(120, 100, 255, 0.9)', 'rgba(80, 160, 255, 0.9)'];
+                particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Add box shadow for glow effect
+                particle.style.boxShadow = `0 0 ${size * 2}px ${particle.style.backgroundColor}`;
+                
+                // Add opacity and transition for smooth animation
+                particle.style.opacity = Math.random() * 0.5 + 0.2;
+                particle.style.transition = `transform ${Math.random() * 8 + 4}s linear, opacity 1s ease`;
+                
+                // Start position and data attributes for animation
+                particle.dataset.x = Math.random() * sectionWidth;
+                particle.dataset.y = Math.random() * sectionHeight;
+                particle.dataset.speedX = (Math.random() - 0.5) * 2;
+                particle.dataset.speedY = (Math.random() - 0.5) * 2;
+                
+                // Add to container
+                container.appendChild(particle);
+            }
+            
+            // Animate particles
+            animateContactParticles();
+        }
+        
+        function animateContactParticles() {
+            const particles = document.querySelectorAll('#particles-container div');
+            const sectionHeight = document.getElementById('contact').offsetHeight;
+            const sectionWidth = document.getElementById('contact').offsetWidth;
+            
+            particles.forEach(particle => {
+                // Update position
+                let x = parseFloat(particle.dataset.x) + parseFloat(particle.dataset.speedX);
+                let y = parseFloat(particle.dataset.y) + parseFloat(particle.dataset.speedY);
+                
+                // Bounce on edges
+                if (x <= 0 || x >= sectionWidth) {
+                    particle.dataset.speedX = -particle.dataset.speedX;
+                    x += parseFloat(particle.dataset.speedX) * 2;
+                }
+                
+                if (y <= 0 || y >= sectionHeight) {
+                    particle.dataset.speedY = -particle.dataset.speedY;
+                    y += parseFloat(particle.dataset.speedY) * 2;
+                }
+                
+                // Save new position
+                particle.dataset.x = x;
+                particle.dataset.y = y;
+                
+                // Apply position
+                particle.style.left = `${(x / sectionWidth) * 100}%`;
+                particle.style.top = `${(y / sectionHeight) * 100}%`;
+                
+                // Random subtle opacity change
+                if (Math.random() > 0.99) {
+                    particle.style.opacity = Math.random() * 0.5 + 0.2;
+                }
+            });
+            
+            requestAnimationFrame(animateContactParticles);
+        }
+        
+        // Initialize contact section particles when page is loaded
+        window.addEventListener('load', createContactParticles);
+        
+        // Re-initialize on window resize for responsiveness
+        window.addEventListener('resize', () => {
+            const container = document.getElementById('particles-container');
+            container.innerHTML = '';
+            createContactParticles();
+        });
+    </script>
+
+    <!-- Enhanced Footer with Dynamic Background -->
+    <footer class="py-16 relative overflow-hidden">
+        <!-- Dynamic background -->
+        <div class="absolute inset-0 z-0">
+            <!-- Gradient background -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
+            
+            <!-- Animated grid pattern -->
+            <div class="absolute inset-0 opacity-10" 
+                style="background-image: linear-gradient(#4f46e5 1px, transparent 1px), linear-gradient(to right, #4f46e5 1px, transparent 1px);
+                background-size: 40px 40px;"></div>
+                
+            <!-- Moving particles -->
+            <div id="footer-particles" class="absolute inset-0"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <!-- Footer top section -->
+            <div class="flex flex-col md:flex-row justify-between mb-12 pb-12 border-b border-gray-800">
+                <!-- Logo & description -->
+                <div class="mb-8 md:mb-0 md:w-1/3">
+                    <div class="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text mb-4">CodeHack</div>
+                    <p class="text-gray-400 mb-6">Empowering your digital presence with cutting-edge tech solutions at student-friendly prices.</p>
+                    
+                    <!-- Enhanced social media links -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-gray-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-600 hover:text-white transform hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick links -->
+                <div class="mb-8 md:mb-0 md:w-1/4">
+                    <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-pink-400 transition-colors">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-pink-400 transition-colors">Services</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-pink-400 transition-colors">Testimonials</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-pink-400 transition-colors">Portfolio</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-pink-400 transition-colors">Our Team</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact info -->
+                <div class="mb-8 md:mb-0 md:w-1/4">
+                    <h4 class="text-white text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-purple-500 mr-3"></i>
+                            <a href="mailto:info@codehack.tech" class="text-gray-400 hover:text-pink-400 transition-colors">info@codehack.tech</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-purple-500 mr-3"></i>
+                            <span class="text-gray-400">(+91) 9876 543 210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-purple-500 mr-3"></i>
+                            <span class="text-gray-400">Bangalore, India</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="md:w-1/4">
+                    <h4 class="text-white text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest services and offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-3 py-2 bg-gray-800 text-white rounded-l-md focus:outline-none focus:ring-1 focus:ring-purple-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-r-md hover:opacity-90 transition-opacity">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer bottom -->
+            <div class="text-center">
+                <p class="text-gray-500">© 2025 CodeHack. All rights reserved.</p>
+                <p class="text-gray-600 text-sm mt-2 flex items-center justify-center">
+                    Designed with <i class="fas fa-heart text-pink-500 mx-1 animate-pulse"></i> by CodeHack
+                </p>
+            </div>
+        </div>
+        
+        <!-- Add script for footer particles animation -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                createFooterParticles();
+            });
+            
+            function createFooterParticles() {
+                const container = document.getElementById('footer-particles');
+                const colors = ['#4f46e5', '#ec4899', '#8b5cf6'];
+                
+                for (let i = 0; i < 30; i++) {
+                    const particle = document.createElement('div');
+                    const size = Math.random() * 4 + 1;
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    
+                    particle.style.position = 'absolute';
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+                    particle.style.background = color;
+                    particle.style.borderRadius = '50%';
+                    particle.style.opacity = Math.random() * 0.3 + 0.1;
+                    particle.style.boxShadow = `0 0 ${size + 2}px ${color}`;
+                    
+                    // Random position
+                    particle.style.left = `${Math.random() * 100}%`;
+                    particle.style.top = `${Math.random() * 100}%`;
+                    
+                    // Animation
+                    const duration = Math.random() * 20 + 10;
+                    const delay = Math.random() * 5;
+                    
+                    particle.animate([
+                        { transform: 'translateY(0) rotate(0deg)', opacity: particle.style.opacity },
+                        { transform: `translateY(-${Math.random() * 100 + 50}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                    ], {
+                        duration: duration * 1000,
+                        delay: delay * 1000,
+                        iterations: Infinity
+                    });
+                    
+                    container.appendChild(particle);
+                }
+            }
+        </script>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: true,
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('nav-active');
+            } else {
+                navbar.classList.remove('nav-active');
+            }
+        };
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Initialize Swiper
+        const testimonialsSwiper = new Swiper('#testimonials .swiper-container', {
             loop: true,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            navigation: {
+                nextEl: '#testimonials .swiper-button-next',
+                prevEl: '#testimonials .swiper-button-prev',
             },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+        }); 
+
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+    
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tab = button.getAttribute('data-tab');
+    
+                tabContents.forEach(content => {
+                    content.style.display = content.id === tab ? 'block' : 'none';
+                });
+    
+                tabButtons.forEach(btn => btn.classList.remove('bg-purple-700'));
+                button.classList.add('bg-purple-700');
+            });
         });
-    </script>
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-6 bg-darker" data-aos="fade-up">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Get In Touch</h2>
-            <p class="text-lg text-gray-300 mb-6">📞 Contact us:</p>
-            <p class="text-gray-400">Karamveer Singh Oberoi: +91 9359791895</p>
-            <p class="text-gray-400">Ayush Chainani: +91 9307528352</p>
-            <p class="text-gray-400 mt-4">🌐 <a href="https://codehack.tech" class="text-blue-400 hover:underline">codehack.tech</a></p>
-            <p class="text-lg text-pink-300 mt-6">Let’s Build Something Awesome!</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 bg-dark text-center text-gray-500">
-        <p>© 2025 CodeHack. All rights reserved.</p>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1000, // Increase duration for stronger animations
-        easing: 'ease-in-out', // Smooth easing for animations
-        once: false, // Allow animations to trigger on both scroll up and down
-        mirror: true, // Enable animations when scrolling back up
-    });
-
-    const navbar = document.getElementById('navbar');
-    window.onscroll = () => {
-        if (window.scrollY > 10) {
-            navbar.classList.add('nav-active');
-        } else {
-            navbar.classList.remove('nav-active');
+    
+        // Show default tab on load
+        document.querySelectorAll('.tab-content').forEach((tab, i) => {
+            tab.style.display = i === 0 ? 'block' : 'none';
+        });
+        
+        // Create stars for hero section background
+        function generateStars() {
+            const starsContainer = document.getElementById('stars-container');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.classList.add('stars');
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.width = `${Math.random() * 2 + 1}px`;
+                star.style.height = star.style.width;
+                star.style.animationName = 'animStar';
+                star.style.animationDuration = `${Math.random() * 100 + 50}s`;
+                star.style.animationTimingFunction = 'linear';
+                star.style.animationIterationCount = 'infinite';
+                starsContainer.appendChild(star);
+            }
         }
-    };
-
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-</script>
+        
+        generateStars();
+    </script>
 </body>
 
-</html>
+</html></div>
