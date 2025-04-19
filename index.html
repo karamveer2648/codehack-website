@@ -173,7 +173,59 @@
             </div>
         </div>
     </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-dark">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="swiper-container" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide bg-darker rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="client1.jpg" alt="Client 1" class="w-16 h-16 rounded-full border-2 border-pink-500">
+                        </div>
+                        <p class="text-gray-300 italic">"CodeHack transformed our vision into reality. Their professionalism and creativity are unmatched!"</p>
+                        <h3 class="mt-4 text-lg font-semibold text-pink-400">- John Doe, CEO of TechCorp</h3>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide bg-darker rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="client2.jpg" alt="Client 2" class="w-16 h-16 rounded-full border-2 border-purple-500">
+                        </div>
+                        <p class="text-gray-300 italic">"Their AI-powered tools boosted our productivity by 200%. Highly recommended!"</p>
+                        <h3 class="mt-4 text-lg font-semibold text-purple-400">- Jane Smith, Founder of InnovateAI</h3>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide bg-darker rounded-2xl p-8 shadow-lg">
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="client3.jpg" alt="Client 3" class="w-16 h-16 rounded-full border-2 border-blue-500">
+                        </div>
+                        <p class="text-gray-300 italic">"The team at CodeHack is incredibly talented and easy to work with. A+ service!"</p>
+                        <h3 class="mt-4 text-lg font-semibold text-blue-400">- Alex Johnson, Freelancer</h3>
+                    </div>
+                </div>
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination mt-6"></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 bg-darker" data-aos="fade-up">
         <div class="max-w-4xl mx-auto text-center">
