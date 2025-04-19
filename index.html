@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHack - Tech Services</title>
+    <meta name="description" content="CodeHack offers professional tech solutions at student-friendly prices. Specializing in websites, full-stack apps, and AI-powered tools.">
+    <meta name="keywords" content="Web Development, AI Tools, Full Stack, Portfolio, CodeHack, Tailwind, Django, MERN">
+    <meta name="author" content="CodeHack - Ayush Chainani & Karamveer Singh Oberoi">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+
+    <style>
+        body {
+            background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+        }
+
+        .nav-active {
+            backdrop-filter: blur(10px);
+            background: rgba(15, 12, 41, 0.8);
+            border-bottom: 1px solid #4f46e5;
+            transition: all 0.3s ease;
+        }
+
+        .hover-zoom {
+            transition: transform 0.5s;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-img {
+            transition: transform 0.4s, opacity 0.4s;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Custom background classes */
+        .bg-dark {
+            background-color: #1f1f1f;
+        }
+
+        .bg-darker {
+            background-color: #0f0f0f;
+        }
+    </style>
+</head>
+
+<body class="text-white font-sans scroll-smooth">
+
+    <!-- Navbar -->
+    <header id="navbar" class="fixed w-full z-50 p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">CodeHack</div>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-yellow-400">Home</a>
+            <a href="#services" class="hover:text-yellow-400">Services</a>
+            <a href="#portfolio" class="hover:text-yellow-400">Portfolio</a>
+            <a href="#testimonials" class="hover:text-yellow-400">Testimonials</a>
+            <a href="#contact" class="hover:text-yellow-400">Contact</a>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden absolute top-16 right-4 bg-[#1c1e35] rounded-lg shadow-lg py-2">
+            <a href="#home" class="block px-4 py-2 hover:text-yellow-400">Home</a>
+            <a href="#services" class="block px-4 py-2 hover:text-yellow-400">Services</a>
+            <a href="#portfolio" class="block px-4 py-2 hover:text-yellow-400">Portfolio</a>
+            <a href="#testimonials" class="block px-4 py-2 hover:text-yellow-400">Testimonials</a>
+            <a href="#contact" class="block px-4 py-2 hover:text-yellow-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div>
+            <img src="codehack.png" alt="CodeHack Logo" class="mx-auto w-40 mb-4" loading="lazy">
+            <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">TECH SERVICES BY CODEHACK</h1>
+            <p class="mt-4 text-xl text-yellow-300">Empowering Your Digital Presence</p>
+            <p class="mt-2 text-lg text-gray-300">🚀 Get Professional Tech Solutions at Student-Friendly Prices!</p>
+            <div class="mt-6"></div>
+            <a href="#services" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl shadow-lg hover:scale-105 transition-transform">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-darker">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">Our Services</h2>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Website Development</h3>
+                    <p class="text-gray-400">Professional static and dynamic websites tailored to your needs.</p>
+                </div>
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">App Development</h3>
+                    <p class="text-gray-400">Android/iOS apps with clean UI and great performance.</p>
+                </div>
+                <div class="bg-dark rounded-2xl p-8 hover-zoom shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Tech Consulting</h3>
+                    <p class="text-gray-400">Strategic IT advice to scale your ideas with technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6 bg-dark">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">Our Projects</h2>
+            <div class="grid gap-8 md:grid-cols-3">
+                <img src="codehack.png" alt="Project 1" class="rounded-2xl gallery-img shadow-lg" />
+                <img src="codehack.png" alt="Project 2" class="rounded-2xl gallery-img shadow-lg" />
+                <img src="codehack.png" alt="Project 3" class="rounded-2xl gallery-img shadow-lg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-darker">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">What Clients Say</h2>
+            <div class="grid gap-8 md:grid-cols-2">
+                <div class="bg-dark rounded-2xl p-8 shadow-lg hover-zoom">
+                    <p class="text-gray-400 italic">"CodeHack delivered a fantastic website for our business, on time and budget. Highly recommend!"</p>
+                    <h4 class="mt-4 text-yellow-300 font-semibold">- Rahul Sharma</h4>
+                </div>
+                <div class="bg-dark rounded-2xl p-8 shadow-lg hover-zoom">
+                    <p class="text-gray-400 italic">"Professional and creative team. Our app is exactly how we envisioned it."</p>
+                    <h4 class="mt-4 text-yellow-300 font-semibold">- Priya Deshmukh</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-darker">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text">Get In Touch</h2>
+            <form action="#" class="space-y-6">
+                <input type="text" placeholder="Name" class="w-full p-4 rounded-lg bg-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400" required />
+                <input type="email" placeholder="Email" class="w-full p-4 rounded-lg bg-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400" required />
+                <textarea placeholder="Message" rows="4" class="w-full p-4 rounded-lg bg-dark text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400" required></textarea>
+                <button type="submit" class="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-lg hover:scale-105 transition-transform duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-dark text-center text-gray-500">
+        <p>© 2025 CodeHack. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Shrink navbar on scroll
+        const navbar = document.getElementById('navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('nav-active');
+            } else {
+                navbar.classList.remove('nav-active');
+            }
+        };
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
+    
