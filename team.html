@@ -39,143 +39,143 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        html, body {
-            background-color: #090A0F;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
+            html, body {
+                background-color: #090A0F;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font-family: 'Poppins', sans-serif;
+                scroll-behavior: smooth;
+            }
 
-        /* Enhanced backgrounds for different sections */
-        #team-hero {
-            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        #team-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM0ZjQ2ZTUxMCI+PC9yZWN0Pgo8L3N2Zz4=');
-            opacity: 0.1;
-        }
+            /* Enhanced backgrounds for different sections */
+            #team-hero {
+                background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+                position: relative;
+                overflow: hidden;
+            }
+            
+            #team-hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM0ZjQ2ZTUxMCI+PC9yZWN0Pgo8L3N2Zz4=');
+                opacity: 0.1;
+            }
 
-        #founders-section {
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-            position: relative;
-        }
-        
-        #founders-section::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            z-index: 0;
-        }
+            #founders-section {
+                background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                position: relative;
+            }
+            
+            #founders-section::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                z-index: 0;
+            }
 
-        .nav-active {
-            backdrop-filter: blur(10px);
-            background: rgba(15, 12, 41, 0.8);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
+            .nav-active {
+                backdrop-filter: blur(10px);
+                background: rgba(15, 12, 41, 0.8);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+            }
 
-        .hover-zoom {
-            transition: transform 0.5s, box-shadow 0.3s;
-        }
+            .hover-zoom {
+                transition: transform 0.5s, box-shadow 0.3s;
+            }
 
-        .hover-zoom:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        }
+            .hover-zoom:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            }
 
-        .glass-card {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        }
+            .glass-card {
+                backdrop-filter: blur(10px);
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            }
 
-        .team-card {
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            z-index: 10;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .team-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(225deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 60%);
-            z-index: -1;
-        }
-        
-        .team-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            border-color: rgba(79, 70, 229, 0.5);
-        }
+            .team-card {
+                position: relative;
+                overflow: hidden;
+                transition: all 0.4s ease;
+                z-index: 10;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .team-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(225deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 60%);
+                z-index: -1;
+            }
+            
+            .team-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+                border-color: rgba(79, 70, 229, 0.5);
+            }
 
-        .social-icon {
-            transition: all 0.3s ease;
-        }
-        
-        .social-icon:hover {
-            transform: translateY(-5px);
-        }
+            .social-icon {
+                transition: all 0.3s ease;
+            }
+            
+            .social-icon:hover {
+                transform: translateY(-5px);
+            }
 
-        /* Stars animation for hero section */
-        .stars {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            background: white;
-            z-index: 0;
-        }
+            /* Stars animation for hero section */
+            .stars {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                background: white;
+                z-index: 0;
+            }
 
-        @keyframes animStar {
-            from { transform: translateY(0px); }
-            to { transform: translateY(-2000px); }
-        }
+            @keyframes animStar {
+                from { transform: translateY(0px); }
+                to { transform: translateY(-2000px); }
+            }
 
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #0f0f0f;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: #4f46e5;
-            border-radius: 5px;
-        }
-        
-        .skill-tag {
-            transition: all 0.3s ease;
-        }
-        
-        .skill-tag:hover {
-            background: rgba(236, 72, 153, 0.3);
-            transform: translateY(-2px);
-        }
+            /* Custom scrollbar */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            
+            ::-webkit-scrollbar-track {
+                background: #0f0f0f;
+            }
+            
+            ::-webkit-scrollbar-thumb {
+                background: #4f46e5;
+                border-radius: 5px;
+            }
+            
+            .skill-tag {
+                transition: all 0.3s ease;
+            }
+            
+            .skill-tag:hover {
+                background: rgba(236, 72, 153, 0.3);
+                transform: translateY(-2px);
+            }
     </style>
     
     <!-- Google Fonts - Poppins -->
@@ -184,93 +184,586 @@
 
 <body class="text-white font-sans scroll-smooth">
 
-    <!-- Enhanced Responsive Navbar -->
-    <header id="navbar" class="fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300">
-        <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">CodeHack</a>
+    <!-- Futuristic Animated Navbar -->
+    <header id="navbar" class="fixed w-full z-50 p-4 transition-all duration-500 backdrop-filter backdrop-blur-sm bg-opacity-0">
+        <!-- Animated border gradient that follows scroll -->
+        <div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-70 glow-animation"></div>
         
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex space-x-8">
-            <a href="index.html#home" class="text-white hover:text-pink-400 transition-colors">Home</a>
-            <a href="index.html#services" class="text-white hover:text-pink-400 transition-colors">Services</a>
-            <a href="index.html#testimonials" class="text-white hover:text-pink-400 transition-colors">Testimonials</a>
-            <a href="team.html" class="text-pink-400 transition-colors">Our Team</a>
-            <a href="index.html#contact" class="text-white hover:text-pink-400 transition-colors">Contact</a>
-        </nav>
-        
-        <!-- CTA Button (Desktop) -->
-        <div class="hidden md:block">
-            <a href="index.html#contact" class="px-5 py-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-medium hover:scale-105 transition">Get a Quote</a>
+        <!-- Dynamic 3D-style container -->
+        <div class="relative flex justify-between items-center px-4 py-2 rounded-2xl glass-nav overflow-hidden">
+            <!-- Animated background particles -->
+            <div class="particle-container absolute inset-0 z-0">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+            
+            <!-- Logo with animated elements -->
+            <a href="index.html" class="relative z-10 group"></a>
+                <span class="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text relative">
+                    CodeHack
+                    <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-pink-500 to-blue-500 group-hover:w-full transition-all duration-300"></span>
+                </span>
+                <!-- Animated code brackets -->
+                <span class="absolute -left-4 top-1/2 -translate-y-1/2 text-pink-500 opacity-0 group-hover:opacity-100 group-hover:-left-6 transition-all duration-300">&lt;</span>
+                <span class="absolute -right-4 top-1/2 -translate-y-1/2 text-blue-500 opacity-0 group-hover:opacity-100 group-hover:-right-6 transition-all duration-300">/&gt;</span>
+            </a>
+            
+            <!-- Desktop Navigation with hover animations -->
+            <nav class="hidden md:flex space-x-1 relative z-10">
+                <a href="index.html#home" class="nav-link group px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 relative overflow-hidden">
+                    <span class="relative z-10">Home</span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-pink-500 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </a>
+                <a href="index.html#services" class="nav-link group px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 relative overflow-hidden">
+                    <span class="relative z-10">Services</span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-pink-500 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </a>
+                <a href="index.html#testimonials" class="nav-link group px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 relative overflow-hidden">
+                    <span class="relative z-10">Testimonials</span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-pink-500 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </a>
+                <a href="team.html" class="nav-link-active group px-4 py-2 rounded-lg relative overflow-hidden">
+                    <span class="relative z-10 text-pink-400">Our Team</span>
+                    <span class="absolute inset-0 bg-pink-500/10 rounded-lg"></span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-pink-500"></span>
+                </a>
+                <a href="index.html#contact" class="nav-link group px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 relative overflow-hidden">
+                    <span class="relative z-10">Contact</span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-pink-500 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </a>
+            </nav>
+            
+            <!-- CTA Button with hover effect -->
+            <div class="hidden md:block relative z-10">
+                <a href="index.html#contact" class="cta-button relative group">
+                    <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 blur-sm opacity-70 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <span class="relative block px-5 py-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-medium transition-all duration-300 border border-white/10 group-hover:border-white/20">
+                        Get a Quote
+                        <span class="absolute top-0 right-0 -mt-1 -mr-1 w-2 h-2 rounded-full bg-white animate-ping"></span>
+                    </span>
+                </a>
+            </div>
+            
+            <!-- Futuristic Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden relative z-10 w-10 h-10 flex items-center justify-center">
+                <div class="w-6 flex flex-col items-end space-y-1.5 group">
+                    <span class="w-full h-0.5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full transition-all"></span>
+                    <span class="w-3/4 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full transition-all"></span>
+                    <span class="w-1/2 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full transition-all"></span>
+                </div>
+            </button>
         </div>
         
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
-            <i class="fas fa-bars text-2xl"></i>
-        </button>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg border-b border-purple-500 shadow-xl p-6 md:hidden">
-            <div class="flex flex-col space-y-4 items-center">
-                <a href="index.html#home" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Home</a>
-                <a href="index.html#services" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Services</a>
-                <a href="index.html#testimonials" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Testimonials</a>
-                <a href="team.html" class="text-pink-400 transition-colors w-full text-center py-2">Our Team</a>
-                <a href="index.html#contact" class="text-white hover:text-pink-400 transition-colors w-full text-center py-2">Contact</a>
-                <a href="index.html#contact" class="px-5 py-2 w-full text-center bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl font-medium hover:scale-105 transition">Get a Quote</a>
+        <!-- Mobile Menu with enhanced animation -->
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-80 backdrop-filter backdrop-blur-xl z-40 pt-20 pb-6 px-6 md:hidden">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-10 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
+                <div class="absolute bottom-10 right-10 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s"></div>
+            </div>
+            
+            <div class="relative z-10">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html#home" class="mobile-nav-link">
+                        <span class="relative z-10 py-3 block text-lg font-medium">
+                            <i class="fas fa-home mr-2 text-pink-400"></i>Home
+                        </span>
+                        <span class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-pink-500 to-transparent"></span>
+                    </a>
+                    <a href="index.html#services" class="mobile-nav-link">
+                        <span class="relative z-10 py-3 block text-lg font-medium">
+                            <i class="fas fa-cogs mr-2 text-purple-400"></i>Services
+                        </span>
+                        <span class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-pink-500 to-transparent"></span>
+                    </a>
+                    <a href="index.html#testimonials" class="mobile-nav-link">
+                        <span class="relative z-10 py-3 block text-lg font-medium">
+                            <i class="fas fa-quote-right mr-2 text-blue-400"></i>Testimonials
+                        </span>
+                        <span class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-pink-500 to-transparent"></span>
+                    </a>
+                    <a href="team.html" class="mobile-nav-link">
+                        <span class="relative z-10 py-3 block text-lg font-medium text-pink-400">
+                            <i class="fas fa-users mr-2"></i>Our Team
+                        </span>
+                        <span class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-pink-500 to-transparent"></span>
+                    </a>
+                    <a href="index.html#contact" class="mobile-nav-link">
+                        <span class="relative z-10 py-3 block text-lg font-medium">
+                            <i class="fas fa-paper-plane mr-2 text-indigo-400"></i>Contact
+                        </span>
+                        <span class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-pink-500 to-transparent"></span>
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex justify-center">
+                    <a href="index.html#contact" class="w-full relative group overflow-hidden">
+                        <span class="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-600 rounded-xl opacity-80 group-hover:opacity-100 animate-pulse transition-all duration-300"></span>
+                        <span class="relative block py-3 text-center font-medium text-white bg-black bg-opacity-30 rounded-xl border border-white/10">
+                            Get a Quote
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                    </a>
+                </div>
+                
+                <button id="close-menu" class="absolute top-6 right-6 w-8 h-8 flex items-center justify-center text-white">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Team Hero Section -->
-    <section id="team-hero" class="min-h-[60vh] flex items-center justify-center text-center px-4 pt-24 pb-16 relative" data-aos="fade-up">
-        <!-- Stars background -->
-        <div id="stars-container"></div>
+    <!-- Interactive Team Hero Section -->
+    <section id="team-hero" class="min-h-[80vh] flex items-center justify-center text-center px-4 pt-32 pb-20 relative overflow-hidden">
+        <!-- Interactive stars background -->
+        <div id="stars-container" class="absolute inset-0 z-0"></div>
         
-        <div class="z-10 relative">
-            <h1 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text drop-shadow-lg mb-6">Meet Our Team</h1>
-            <p class="max-w-3xl mx-auto text-lg text-gray-300">The brilliant minds behind CodeHack, dedicated to revolutionizing digital solutions. We're a small team with big ideas, delivering professional tech services at student-friendly prices.</p>
-        </div>
-    </section>
-
-    <!-- Founders Section -->
-    <section id="founders-section" class="py-20 px-6 relative">
-        <!-- Animated background shapes -->
-        <div class="absolute inset-0 overflow-hidden z-0">
-            <div class="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-purple-500/10 to-transparent rounded-full blur-3xl"></div>
-            <div class="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-l from-pink-500/10 to-transparent rounded-full blur-3xl"></div>
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
-        </div>
-        
-        <div class="max-w-6xl mx-auto z-10 relative">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <span class="inline-block px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 text-purple-300 text-sm font-medium mb-3">THE VISIONARIES</span>
-                <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">Our Founders</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto mt-4 rounded-full"></div>
-            </div>
+        <!-- Animated geometric elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-[15%] left-[10%] w-60 h-60 rounded-full border border-pink-500/20 animate-spin-slow"></div>
+            <div class="absolute bottom-[20%] right-[15%] w-40 h-40 rounded-full border border-blue-500/20 animate-reverse-spin"></div>
+            <div class="absolute top-[50%] left-[80%] w-20 h-20 rounded-full bg-gradient-to-br from-purple-500/5 to-transparent blur-xl pulse-animation"></div>
             
-            <div class="grid md:grid-cols-2 gap-12 mb-16 relative">
-                <!-- Connecting element between founders -->
-                <div class="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-pink-500/20 to-blue-500/20 rounded-full z-10">
-                    <div class="absolute inset-2 bg-gray-900 rounded-full flex items-center justify-center">
-                        <i class="fas fa-code text-pink-500"></i>
+            <!-- Animated code patterns -->
+            <div class="absolute top-[15%] right-[20%] text-xs text-pink-500/20 font-mono code-rain">
+                &lt;div class="team"&gt;
+                &lt;talent&gt;exceptional&lt;/talent&gt;
+                &lt;passion&gt;unlimited&lt;/passion&gt;
+                &lt;/div&gt;
+            </div>
+        </div>
+        
+        <!-- Foreground glass card -->
+        <div class="max-w-5xl mx-auto relative z-10" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-blue-500/5 rounded-3xl blur-3xl"></div>
+            
+            <div class="glass-hero relative overflow-hidden rounded-3xl border border-white/5 p-10 md:p-16">
+                <!-- Decorative elements -->
+                <div class="absolute -top-20 -right-20 w-40 h-40 bg-pink-500/10 rounded-full blur-xl"></div>
+                <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-blue-500/10 rounded-full blur-xl"></div>
+                
+                <!-- Animated tech symbols orbiting title -->
+                <div class="tech-orbit absolute inset-0 flex items-center justify-center">
+                    <span class="tech-symbol" style="--rotate-speed: 30s; --distance: 150px; --delay: 0s;">
+                        <i class="fab fa-react text-blue-400/60"></i>
+                    </span>
+                    <span class="tech-symbol" style="--rotate-speed: 25s; --distance: 150px; --delay: -5s;">
+                        <i class="fab fa-js text-yellow-400/60"></i>
+                    </span>
+                    <span class="tech-symbol" style="--rotate-speed: 35s; --distance: 150px; --delay: -10s;">
+                        <i class="fab fa-python text-green-400/60"></i>
+                    </span>
+                    <span class="tech-symbol" style="--rotate-speed: 40s; --distance: 150px; --delay: -15s;">
+                        <i class="fab fa-aws text-orange-400/60"></i>
+                    </span>
+                    <span class="tech-symbol" style="--rotate-speed: 28s; --distance: 150px; --delay: -20s;">
+                        <i class="fab fa-node-js text-green-500/60"></i>
+                    </span>
+                </div>
+                
+                <!-- Title with animated typing effect -->
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 relative">
+                    <span class="hidden md:inline-block gradient-mask-left w-[80px]">< </span>
+                    <span class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text drop-shadow-lg typed-text" data-typed='["Meet Our Team", "The CodeHack Crew", "Coding Visionaries"]'>Meet Our Team</span>
+                    <span class="hidden md:inline-block gradient-mask-right w-[80px]"> /></span>
+                    <span class="typing-cursor">|</span>
+                </h1>
+                
+                <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-8">
+                    The brilliant minds behind CodeHack, dedicated to revolutionizing digital solutions.
+                    We're a small team with big ideas, delivering professional tech services at student-friendly prices.
+                </p>
+                
+                <!-- Interactive team stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                    <div class="stat-card p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 transition-all group">
+                        <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 mb-1">
+                            <span class="counter" data-target="2">0</span>+
+                        </div>
+                        <p class="text-xs text-gray-400 group-hover:text-white transition-colors">Team Members</p>
+                    </div>
+                    <div class="stat-card p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 transition-all group">
+                        <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 mb-1">
+                            <span class="counter" data-target="15">0</span>+
+                        </div>
+                        <p class="text-xs text-gray-400 group-hover:text-white transition-colors">Projects Completed</p>
+                    </div>
+                    <div class="stat-card p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 transition-all group">
+                        <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500 mb-1">
+                            <span class="counter" data-target="8">0</span>+
+                        </div>
+                        <p class="text-xs text-gray-400 group-hover:text-white transition-colors">Technologies</p>
+                    </div>
+                    <div class="stat-card p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 transition-all group">
+                        <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500 mb-1">100%</div>
+                        <p class="text-xs text-gray-400 group-hover:text-white transition-colors">Client Satisfaction</p>
                     </div>
                 </div>
                 
+                <!-- Animated down arrow -->
+                <div class="mt-12 animate-bounce">
+                    <a href="#founders-section" class="inline-block rounded-full p-2 bg-white/5 hover:bg-white/10 transition-colors">
+                        <svg class="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Add dynamic scrolling styles -->
+    <style>
+        @keyframes glow-animation {
+            0% {opacity: 0.4;}
+            50% {opacity: 0.8;}
+            100% {opacity: 0.4;}
+        }
+        
+        .glow-animation {
+            animation: glow-animation 3s infinite ease-in-out;
+        }
+        
+        .glass-nav {
+            background: rgba(15, 15, 30, 0.3);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 32px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s ease;
+        }
+        
+        .glass-hero {
+            background: rgba(15, 15, 30, 0.2);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .nav-link-active {
+            color: rgba(236, 72, 153, 1);
+        }
+        
+        .mobile-nav-link {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-nav-link:hover {
+            transform: translateX(8px);
+        }
+        
+        .particle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: white;
+            opacity: 0.1;
+        }
+        
+        .particle:nth-child(1) {
+            top: 20%;
+            left: 60%;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        .particle:nth-child(2) {
+            top: 60%;
+            left: 30%;
+            animation: float 15s infinite ease-in-out 5s;
+        }
+        
+        .particle:nth-child(3) {
+            top: 40%;
+            left: 80%;
+            animation: float 25s infinite ease-in-out 2s;
+        }
+        
+        @keyframes float {
+            0% {transform: translate(0, 0) rotate(0deg);}
+            25% {transform: translate(-20px, -15px) rotate(45deg);}
+            50% {transform: translate(15px, -25px) rotate(90deg);}
+            75% {transform: translate(10px, 20px) rotate(45deg);}
+            100% {transform: translate(0, 0) rotate(0deg);}
+        }
+        
+        @keyframes typing {
+            from {width: 0;}
+            to {width: 100%;}
+        }
+        
+        .typing-cursor {
+            animation: blink 1s infinite;
+            color: rgba(236, 72, 153, 1);
+        }
+        
+        @keyframes blink {
+            0%, 100% {opacity: 1;}
+            50% {opacity: 0;}
+        }
+        
+        .gradient-mask-left {
+            background: linear-gradient(to right, transparent, white);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .gradient-mask-right {
+            background: linear-gradient(to left, transparent, white);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .code-rain {
+            animation: rain 30s linear infinite;
+            white-space: pre;
+            line-height: 1.5;
+        }
+        
+        @keyframes rain {
+            0% {transform: translateY(-100%);}
+            100% {transform: translateY(100vh);}
+        }
+        
+        .tech-orbit {
+            pointer-events: none;
+        }
+        
+        .tech-symbol {
+            position: absolute;
+            font-size: 1.5rem;
+            animation-name: orbit;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: var(--rotate-speed);
+            animation-delay: var(--delay);
+        }
+        
+        @keyframes orbit {
+            0% {
+                transform: rotate(0deg) translateX(var(--distance)) rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg) translateX(var(--distance)) rotate(-360deg);
+            }
+        }
+        
+        @keyframes pulse-animation {
+            0% {transform: scale(0.8); opacity: 0.5;}
+            50% {transform: scale(1.2); opacity: 0.8;}
+            100% {transform: scale(0.8); opacity: 0.5;}
+        }
+        
+        .pulse-animation {
+            animation: pulse-animation 4s infinite;
+        }
+        
+        .animate-spin-slow {
+            animation: spin 30s linear infinite;
+        }
+        
+        .animate-reverse-spin {
+            animation: spin 20s linear infinite reverse;
+        }
+        
+        @keyframes spin {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+        
+        .counter {
+            display: inline-block;
+        }
+    </style>
+    
+    <!-- Additional script for animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize counters
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / 20;
+                
+                if(count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => counter.innerText = target, 1500);
+                }
+            });
+            
+            // Mobile menu handling
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMenu = document.getElementById('close-menu');
+            
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                document.body.classList.toggle('overflow-hidden');
+            });
+            
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            });
+            
+            // Typing effect
+            const typedElements = document.querySelectorAll('.typed-text');
+            typedElements.forEach(el => {
+                const texts = JSON.parse(el.dataset.typed);
+                let textIndex = 0;
+                
+                function typeText() {
+                    const currentText = texts[textIndex];
+                    el.textContent = currentText;
+                    
+                    // Move to next text
+                    textIndex = (textIndex + 1) % texts.length;
+                    setTimeout(typeText, 3000);
+                }
+                
+                setTimeout(typeText, 3000);
+            });
+            
+            // Interactive stars with mouse movement
+            const starsContainer = document.getElementById('stars-container');
+            const stars = Array.from({length: 100}, () => {
+                const star = document.createElement('div');
+                star.classList.add('stars');
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                const size = Math.random() * 2 + 1;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.opacity = Math.random() * 0.8;
+                starsContainer.appendChild(star);
+                return star;
+            });
+            
+            // Make stars move slightly with mouse movement
+            document.addEventListener('mousemove', (e) => {
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                stars.forEach(star => {
+                    const factor = parseFloat(star.style.width) / 3;
+                    star.style.transform = `translate(${(x - 0.5) * factor * 10}px, ${(y - 0.5) * factor * 10}px)`;
+                });
+            });
+        });
+    </script></svg></div></h1></span></div></a></div></a>
+
+    <!-- Founders Section with Enhanced Interactive Elements -->
+    <section id="founders-section" class="py-20 px-6 relative">
+        <!-- Advanced animated background with multiple layers -->
+        <div class="absolute inset-0 overflow-hidden z-0">
+            <!-- Animated gradient orbs -->
+            <div class="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-purple-500/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-l from-pink-500/10 to-transparent rounded-full blur-3xl animate-pulse" style="animation-delay: 1.5s"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" style="animation-delay: 0.7s"></div>
+            
+            <!-- Tech-inspired background patterns -->
+            <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMCAwaDYwdjYwSDB6Ii8+PHBhdGggZD0iTTAgMGg2MHY2MEgweiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIuMDUiLz48cGF0aCBkPSJNMzAgMzBoNjB2NjBIMzB6IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSAzMCAzMCkiLz48cGF0aCBkPSJNMzAgMzBoNjB2NjBIMzB6IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9Ii4wNSIgdHJhbnNmb3JtPSJyb3RhdGUoNDUgMzAgMzApIi8+PC9nPjwvc3ZnPg==')"></div>
+            
+            <!-- Digital constellation -->
+            <div id="constellation" class="absolute inset-0"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto z-10 relative">
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+                <!-- Enhanced section title with spotlight effect -->
+                <div class="spotlight-container relative inline-block">
+                    <span class="inline-block px-4 py-1 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 text-purple-300 text-sm font-medium mb-3">
+                        <i class="fas fa-star-of-life text-xs mr-1 animate-pulse"></i>
+                        THE VISIONARIES
+                        <i class="fas fa-star-of-life text-xs ml-1 animate-pulse"></i>
+                    </span>
+                    <div class="spotlight"></div>
+                </div>
+                
+                <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text relative mt-2">
+                    Our Founders
+                    <span class="absolute -right-6 top-0 text-sm text-pink-500 font-normal coding-text">/></span>
+                    <span class="absolute -left-6 top-0 text-sm text-blue-500 font-normal coding-text">&lt;</span>
+                </h2>
+                
+                <!-- Animated bar -->
+                <div class="relative h-1 w-24 mx-auto mt-4">
+                    <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full"></div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full animate-pulse blur-sm"></div>
+                </div>
+                
+                <!-- Subtitle with typewriter effect -->
+                <p class="mt-6 text-gray-300 max-w-2xl mx-auto typewriter-text" data-text="Meet the brilliant minds behind CodeHack's success story.">
+                    Meet the brilliant minds behind CodeHack's success story.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16 relative">
+                <!-- Enhanced connecting element between founders -->
+                <div class="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                    <div class="w-24 h-24 rounded-full bg-gradient-to-br from-pink-500/30 to-blue-500/30 animate-spin-slow blur-md"></div>
+                    <div class="absolute inset-4 rounded-full bg-gray-900 flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500/50 to-blue-500/50 flex items-center justify-center">
+                            <i class="fas fa-code text-white animate-pulse"></i>
+                        </div>
+                    </div>
+                    <!-- Orbit rings -->
+                    <div class="absolute inset-0 border border-pink-500/20 rounded-full animate-spin-slow" style="--tw-rotate: 30deg"></div>
+                    <div class="absolute inset-[-8px] border border-blue-500/20 rounded-full animate-reverse-spin" style="--tw-rotate: -20deg"></div>
+                </div>
+                
                 <!-- Founder 1: Karamveer Singh Oberoi -->
-                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group hover-3d" data-aos="fade-right" data-aos-delay="100" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
                     <div class="relative bg-gradient-to-br from-indigo-900/40 to-purple-900/40 p-8">
-                        <!-- Decorative elements -->
+                        <!-- Enhanced decorative elements -->
                         <div class="absolute top-0 right-0 w-40 h-40 bg-purple-500/10 rounded-full blur-xl"></div>
                         <div class="absolute bottom-10 left-10 w-20 h-20 bg-pink-500/10 rounded-full blur-lg"></div>
                         
+                        <!-- Code pattern overlay -->
+                        <div class="absolute inset-0 overflow-hidden opacity-5">
+                            <pre class="text-xs leading-3 opacity-30 matrix-text">
+function innovate() {
+  const tech = ['AI', 'Cloud', 'React'];
+  return tech.map(t => implement(t));
+}
+                            </pre>
+                        </div>
+                        
                         <div class="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
-                            <!-- Image with animated border -->
-                            <div class="relative">
+                            <!-- Enhanced image frame with futuristic border -->
+                            <div class="relative cyberpunk-frame">
                                 <div class="w-48 h-48 rounded-xl overflow-hidden border-2 border-purple-500/50 group-hover:border-pink-500 transition-all duration-500 shadow-lg shadow-purple-500/20 group-hover:shadow-pink-500/30">
+                                    <div class="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                     <img src="https://via.placeholder.com/300x300/1e293b/ffffff?text=Karamveer" alt="Karamveer Singh Oberoi" class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700">
+                                    
+                                    <!-- Tech scan effect on hover -->
+                                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 scan-line-animation"></div>
                                 </div>
-                                <!-- Animated corner accent -->
+                                
+                                <!-- Enhanced corner accents with animation -->
                                 <div class="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-pink-500 opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-300"></div>
                                 <div class="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-pink-500 opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-300"></div>
+                                
+                                <!-- Data points that appear on hover -->
+                                <div class="absolute -right-2 top-1/4 w-4 h-4 rounded-full bg-pink-500/80 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 pulse-beacon">
+                                    <span class="absolute top-0 left-full ml-2 whitespace-nowrap bg-gray-900/90 text-pink-400 text-xs px-2 py-1 rounded">Full-Stack Dev</span>
+                                </div>
+                                <div class="absolute -right-2 bottom-1/4 w-4 h-4 rounded-full bg-purple-500/80 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 pulse-beacon">
+                                    <span class="absolute top-0 left-full ml-2 whitespace-nowrap bg-gray-900/90 text-purple-400 text-xs px-2 py-1 rounded">AI Specialist</span>
+                                </div>
                             </div>
                             
                             <div class="text-center md:text-left flex-1">
@@ -278,69 +771,110 @@
                                     Karamveer Singh Oberoi
                                     <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300"></span>
                                 </h3>
-                                <p class="text-pink-400 font-medium mb-2">Co-Founder & CTO</p>
+                                <p class="text-pink-400 font-medium mb-2 flex items-center justify-center md:justify-start">
+                                    <span class="mr-2">Co-Founder & CTO</span>
+                                    <span class="inline-block w-2 h-2 rounded-full bg-pink-500 animate-ping"></span>
+                                </p>
                                 
-                                <!-- Personal motto -->
-                                <div class="italic text-gray-400 text-sm mb-4 border-l-2 border-purple-500 pl-3">
-                                    "Building tomorrow's technology with today's innovation"
+                                <!-- Enhanced personal motto with quote design -->
+                                <div class="italic text-gray-400 text-sm mb-4 border-l-2 border-purple-500 pl-3 relative">
+                                    <span class="absolute -left-1 -top-1 text-purple-500/50 text-xl">"</span>
+                                    Building tomorrow's technology with today's innovation
+                                    <span class="absolute -bottom-1 right-0 text-purple-500/50 text-xl">"</span>
                                 </div>
                                 
-                                <p class="text-gray-300 mb-5">
+                                <p class="text-gray-300 mb-5 backdrop-blur-sm bg-gray-900/20 p-3 rounded-lg">
                                     Tech enthusiast and full-stack developer with expertise in web applications, AI solutions, and cloud infrastructure. Passionate about innovative coding practices and emerging technologies.
                                 </p>
                                 
+                                <!-- Enhanced skill tags with animated hover -->
                                 <div class="flex flex-wrap gap-2 mb-6">
-                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-purple-500 rounded-full text-sm text-purple-300 flex items-center gap-1">
+                                    <span class="skill-tag px-3 py-1 bg-purple-500/20 rounded-full text-sm text-purple-300 flex items-center gap-1 border border-transparent hover:border-purple-500/50 transition-all">
                                         <i class="fas fa-code text-xs"></i>Full-Stack Development
                                     </span>
-                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-blue-500 rounded-full text-sm text-blue-300 flex items-center gap-1">
+                                    <span class="skill-tag px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300 flex items-center gap-1 border border-transparent hover:border-blue-500/50 transition-all">
                                         <i class="fas fa-brain text-xs"></i>AI/ML
                                     </span>
-                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-pink-500 rounded-full text-sm text-pink-300 flex items-center gap-1">
+                                    <span class="skill-tag px-3 py-1 bg-pink-500/20 rounded-full text-sm text-pink-300 flex items-center gap-1 border border-transparent hover:border-pink-500/50 transition-all">
                                         <i class="fas fa-cloud text-xs"></i>Cloud Architecture
                                     </span>
-                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-green-500 rounded-full text-sm text-green-300 flex items-center gap-1">
+                                    <span class="skill-tag px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300 flex items-center gap-1 border border-transparent hover:border-green-500/50 transition-all">
                                         <i class="fas fa-server text-xs"></i>DevOps
                                     </span>
                                 </div>
                                 
+                                <!-- Enhanced social links with better hover effects -->
                                 <div class="flex space-x-3 justify-center md:justify-start">
-                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-600 hover:text-white transform hover:-translate-y-2 transition-all">
-                                        <i class="fab fa-linkedin-in"></i>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-600 hover:text-white hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group/icon">
+                                        <span class="absolute inset-0 bg-blue-600 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300"></span>
+                                        <i class="fab fa-linkedin-in relative z-10"></i>
                                     </a>
-                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-gray-700 hover:text-white transform hover:-translate-y-2 transition-all">
-                                        <i class="fab fa-github"></i>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-gray-700 hover:text-white hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group/icon">
+                                        <span class="absolute inset-0 bg-gray-700 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300"></span>
+                                        <i class="fab fa-github relative z-10"></i>
                                     </a>
-                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-400 hover:text-white transform hover:-translate-y-2 transition-all">
-                                        <i class="fab fa-twitter"></i>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-400 hover:text-white hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group/icon">
+                                        <span class="absolute inset-0 bg-blue-400 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300"></span>
+                                        <i class="fab fa-twitter relative z-10"></i>
                                     </a>
-                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-pink-500 hover:text-white transform hover:-translate-y-2 transition-all">
-                                        <i class="fas fa-globe"></i>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-pink-500 hover:text-white hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group/icon">
+                                        <span class="absolute inset-0 bg-pink-500 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300"></span>
+                                        <i class="fas fa-globe relative z-10"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Bottom bar that reveals on hover -->
-                    <div class="h-1.5 bg-gradient-to-r from-purple-500 to-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    
+                    <!-- Enhanced bottom bar animation -->
+                    <div class="h-1.5 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-30 blur-sm transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                    </div>
                 </div>
                 
                 <!-- Founder 2: Ayush Chainani -->
-                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-card glass-card rounded-2xl p-0 overflow-hidden group hover-3d" data-aos="fade-left" data-aos-delay="200" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
                     <div class="relative bg-gradient-to-br from-blue-900/40 to-indigo-900/40 p-8">
-                        <!-- Decorative elements -->
+                        <!-- Enhanced decorative elements -->
                         <div class="absolute top-0 left-0 w-40 h-40 bg-blue-500/10 rounded-full blur-xl"></div>
                         <div class="absolute bottom-10 right-10 w-20 h-20 bg-indigo-500/10 rounded-full blur-lg"></div>
                         
+                        <!-- Code pattern overlay -->
+                        <div class="absolute inset-0 overflow-hidden opacity-5">
+                            <pre class="text-xs leading-3 opacity-30 matrix-text">
+class Vision {
+  design() {
+    return new Experience('intuitive', 
+                          'beautiful', 
+                          'user-focused');
+  }
+}
+                            </pre>
+                        </div>
+                        
                         <div class="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
-                            <!-- Image with animated border -->
-                            <div class="relative">
+                            <!-- Enhanced image frame with futuristic border -->
+                            <div class="relative cyberpunk-frame">
                                 <div class="w-48 h-48 rounded-xl overflow-hidden border-2 border-blue-500/50 group-hover:border-indigo-500 transition-all duration-500 shadow-lg shadow-blue-500/20 group-hover:shadow-indigo-500/30">
+                                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                     <img src="https://via.placeholder.com/300x300/1e293b/ffffff?text=Ayush" alt="Ayush Chainani" class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700">
+                                    
+                                    <!-- Tech scan effect on hover -->
+                                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 scan-line-animation"></div>
                                 </div>
-                                <!-- Animated corner accent -->
+                                
+                                <!-- Enhanced corner accents with animation -->
                                 <div class="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-300"></div>
                                 <div class="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-blue-500 opacity-0 group-hover:opacity-100 group-hover:w-12 group-hover:h-12 transition-all duration-300"></div>
+                                
+                                <!-- Data points that appear on hover -->
+                                <div class="absolute -right-2 top-1/4 w-4 h-4 rounded-full bg-blue-500/80 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 pulse-beacon">
+                                    <span class="absolute top-0 left-full ml-2 whitespace-nowrap bg-gray-900/90 text-blue-400 text-xs px-2 py-1 rounded">UI/UX Expert</span>
+                                </div>
+                                <div class="absolute -right-2 bottom-1/4 w-4 h-4 rounded-full bg-indigo-500/80 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 pulse-beacon">
+                                    <span class="absolute top-0 left-full ml-2 whitespace-nowrap bg-gray-900/90 text-indigo-400 text-xs px-2 py-1 rounded">Business Strategist</span>
+                                </div>
                             </div>
                             
                             <div class="text-center md:text-left flex-1">
@@ -348,55 +882,227 @@
                                     Ayush Chainani
                                     <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 transition-all duration-300"></span>
                                 </h3>
-                                <p class="text-blue-400 font-medium mb-2">Co-Founder & CEO</p>
+                                <p class="text-blue-400 font-medium mb-2 flex items-center justify-center md:justify-start">
+                                    <span class="mr-2">Co-Founder & CEO</span>
+                                    <span class="inline-block w-2 h-2 rounded-full bg-blue-500 animate-ping"></span>
+                                </p>
                                 
-                                <!-- Personal motto -->
-                                <div class="italic text-gray-400 text-sm mb-4 border-l-2 border-blue-500 pl-3">
-                                    "Where vision meets execution to create exceptional experiences"
+                                <!-- Enhanced personal motto with quote design -->
+                                <div class="italic text-gray-400 text-sm mb-4 border-l-2 border-blue-500 pl-3 relative">
+                                    <span class="absolute -left-1 -top-1 text-blue-500/50 text-xl">"</span>
+                                    Where vision meets execution to create exceptional experiences
+                                    <span class="absolute -bottom-1 right-0 text-blue-500/50 text-xl">"</span>
                                 </div>
                                 
-                                <p class="text-gray-300 mb-5">
+                                <p class="text-gray-300 mb-5 backdrop-blur-sm bg-gray-900/20 p-3 rounded-lg">
                                     Visionary strategist and UI/UX specialist focused on creating seamless digital experiences. Combines business acumen with technical knowledge to deliver exceptional solutions for clients.
                                 </p>
                                 
+                                <!-- Enhanced skill tags with animated hover -->
                                 <div class="flex flex-wrap gap-2 mb-6">
-                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-indigo-500 rounded-full text-sm text-indigo-300 flex items-center gap-1">
+                                    <span class="skill-tag px-3 py-1 bg-indigo-500/20 rounded-full text-sm text-indigo-300 flex items-center gap-1 border border-transparent hover:border-indigo-500/50 transition-all">
                                         <i class="fas fa-paint-brush text-xs"></i>UI/UX Design
                                     </span>
-                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-yellow-500 rounded-full text-sm text-yellow-300 flex items-center gap-1">
+                                    <span class="skill-tag px-3 py-1 bg-yellow-500/20 rounded-full text-sm text-yellow-300 flex items-center gap-1 border border-transparent hover:border-yellow-500/50 transition-all">
                                         <i class="fas fa-tasks text-xs"></i>Project Management
                                     </span>
-                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-red-500 rounded-full text-sm text-red-300 flex items-center gap-1">
+                                    <span class="skill-tag px-3 py-1 bg-red-500/20 rounded-full text-sm text-red-300 flex items-center gap-1 border border-transparent hover:border-red-500/50 transition-all">
                                         <i class="fas fa-chart-line text-xs"></i>Business Development
                                     </span>
-                                    <span class="skill-tag px-3 py-1 bg-opacity-20 bg-cyan-500 rounded-full text-sm text-cyan-300 flex items-center gap-1">
+                                    <span class="skill-tag px-3 py-1 bg-cyan-500/20 rounded-full text-sm text-cyan-300 flex items-center gap-1 border border-transparent hover:border-cyan-500/50 transition-all">
                                         <i class="fas fa-laptop-code text-xs"></i>Frontend Development
                                     </span>
                                 </div>
                                 
+                                <!-- Enhanced social links with better hover effects -->
                                 <div class="flex space-x-3 justify-center md:justify-start">
-                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-600 hover:text-white transform hover:-translate-y-2 transition-all">
-                                        <i class="fab fa-linkedin-in"></i>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-600 hover:text-white hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group/icon">
+                                        <span class="absolute inset-0 bg-blue-600 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300"></span>
+                                        <i class="fab fa-linkedin-in relative z-10"></i>
                                     </a>
-                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-gray-700 hover:text-white transform hover:-translate-y-2 transition-all">
-                                        <i class="fab fa-github"></i>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-gray-700 hover:text-white hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group/icon">
+                                        <span class="absolute inset-0 bg-gray-700 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300"></span>
+                                        <i class="fab fa-github relative z-10"></i>
                                     </a>
-                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-400 hover:text-white transform hover:-translate-y-2 transition-all">
-                                        <i class="fab fa-twitter"></i>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-blue-400 hover:text-white hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group/icon">
+                                        <span class="absolute inset-0 bg-blue-400 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300"></span>
+                                        <i class="fab fa-twitter relative z-10"></i>
                                     </a>
-                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-pink-500 hover:text-white transform hover:-translate-y-2 transition-all">
-                                        <i class="fas fa-globe"></i>
+                                    <a href="#" class="social-icon w-9 h-9 flex items-center justify-center rounded-full bg-gray-800/50 text-gray-400 hover:bg-pink-500 hover:text-white hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group/icon">
+                                        <span class="absolute inset-0 bg-pink-500 rounded-full scale-0 group-hover/icon:scale-100 transition-transform duration-300"></span>
+                                        <i class="fas fa-globe relative z-10"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Bottom bar that reveals on hover -->
-                    <div class="h-1.5 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    
+                    <!-- Enhanced bottom bar animation -->
+                    <div class="h-1.5 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-30 blur-sm transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                    </div>
                 </div>
             </div>
-        </div>   
+            
+            <!-- Additional style elements --> 
+            <style>
+                @keyframes spotlight {
+                    0%, 100% { background-position: -100% 0; }
+                    50% { background-position: 200% 0; }
+                }
+                
+                .spotlight-container {
+                    position: relative;
+                    overflow: hidden;
+                }
+                
+                .spotlight {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+                    background-size: 200% 100%;
+                    animation: spotlight 4s infinite;
+                }
+                
+                .coding-text {
+                    font-family: monospace;
+                }
+                
+                .matrix-text {
+                    animation: pulse 5s infinite;
+                }
+                
+                .typewriter-text {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    display: inline-block;
+                    position: relative;
+                    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+                }
+                
+                @keyframes typing {
+                    from { width: 0 }
+                    to { width: 100% }
+                }
+                
+                @keyframes blink-caret {
+                    from, to { border-right: 2px solid transparent }
+                    50% { border-right: 2px solid rgba(236, 72, 153, 0.7) }
+                }
+                
+                .scan-line-animation {
+                    background-size: 100% 8px;
+                    animation: scanlines 2s linear infinite;
+                }
+                
+                @keyframes scanlines {
+                    0% { background-position: 0 -100%; }
+                    100% { background-position: 0 200%; }
+                }
+                
+                .cyberpunk-frame {
+                    position: relative;
+                }
+                
+                .cyberpunk-frame::after {
+                    content: '';
+                    position: absolute;
+                    top: -5px;
+                    left: -5px;
+                    right: -5px;
+                    bottom: -5px;
+                    border: 1px solid rgba(255,255,255,0.1);
+                    pointer-events: none;
+                    opacity: 0;
+                    transition: all 0.3s ease;
+                }
+                
+                .group:hover .cyberpunk-frame::after {
+                    opacity: 1;
+                    transform: scale(1.05);
+                }
+                
+                .hover-3d {
+                    transition: transform 0.3s ease;
+                    transform-style: preserve-3d;
+                }
+                
+                .hover-3d:hover {
+                    transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+                }
+                
+                .pulse-beacon {
+                    animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+                }
+                
+                @keyframes pulse-ring {
+                    0% { transform: scale(0.8); opacity: 0.8; }
+                    80%, 100% { transform: scale(1.3); opacity: 0; }
+                }
+                
+                /* Create digital constellation effect */
+                #constellation {
+                    pointer-events: none;
+                }
+            </style>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Create constellation effect
+                    const constellation = document.getElementById('constellation');
+                    const dots = 30;
+                    const lines = [];
+                    const points = [];
+                    
+                    for (let i = 0; i < dots; i++) {
+                        const dot = document.createElement('div');
+                        dot.classList.add('constellation-dot');
+                        
+                        const x = Math.random() * 100;
+                        const y = Math.random() * 100;
+                        dot.style.cssText = `
+                            position: absolute;
+                            left: ${x}%;
+                            top: ${y}%;
+                            width: ${Math.random() * 2 + 1}px;
+                            height: ${Math.random() * 2 + 1}px;
+                            background: rgba(255,255,255,${Math.random() * 0.5 + 0.1});
+                            border-radius: 50%;
+                            opacity: ${Math.random() * 0.5 + 0.3};
+                        `;
+                        
+                        constellation.appendChild(dot);
+                        points.push({x, y, el: dot});
+                        
+                        // Animate dot (check if GSAP is available)
+                        if (typeof gsap !== 'undefined') {
+                            gsap.to(dot, {
+                                duration: Math.random() * 3 + 2,
+                                opacity: Math.random() * 0.5,
+                                repeat: -1,
+                                yoyo: true
+                            });
+                        } else {
+                            // Fallback animation without GSAP
+                            dot.style.animation = `pulse ${Math.random() * 3 + 2}s infinite alternate`;
+                        }
+                    }
+                    
+                    // Add 3D tilt effect
+                    const cards = document.querySelectorAll('.hover-3d');
+                    if (typeof VanillaTilt !== 'undefined') {
+                        VanillaTilt.init(cards, {
+                            max: 5,
+                            speed: 300,
+                            glare: true,
+                            "max-glare": 0.1
     </section>
+                    }
+                });
+            </script>
+        </div>   
+    </section></div>
 
     <!-- Our Story Section -->
     <section id="our-story" class="py-20 px-6 relative">
